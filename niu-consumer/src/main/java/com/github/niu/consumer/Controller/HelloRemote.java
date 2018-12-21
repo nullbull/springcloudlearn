@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Date 2018/12/20
  * @Desc
  */
-@FeignClient(name = "niu-server")
+@FeignClient(name = "niu-server", fallback = HelloRemoteHystrix.class)
 public interface HelloRemote {
     @RequestMapping("/hello/{zz}")
     public String hello(@PathVariable(value = "zz") String zz);
