@@ -16,7 +16,6 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients(basePackages = "com.github.niu.consumer.Controller")
-@EnableCircuitBreaker
 public class ConsumerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConsumerApplication.class, args);

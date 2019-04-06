@@ -1,31 +1,27 @@
 server:
-  port: 7777
+  port: 8089
 spring:
   application:
-    name: niu-consumer
+    name: niu-config
   cloud:
     config:
-      profile: dev
-      name: application
-      discovery:
-        enabled: true
-        service-id: niu-config
+      server:
+        git:
+          uri: https://github.com/nullbull/niu-config.git
     bus:
       trace:
         enabled: true
   rabbitmq:
-    port: 5672
-    host: localhost
     username: root
     password: root
     virtual-host: /zwt
+    host: localhost
+    port: 5672
+#          default-label: ${spring.profiles.active}
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8000/eureka/
-feign:
-  hystrix:
-    enabled: true
 management:
   security:
     enabled: false

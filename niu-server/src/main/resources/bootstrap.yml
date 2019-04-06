@@ -1,31 +1,28 @@
-server:
-  port: 7777
 spring:
   application:
-    name: niu-consumer
+    name: niu-server
   cloud:
     config:
       profile: dev
       name: application
       discovery:
-        enabled: true
         service-id: niu-config
+        enabled: true
     bus:
       trace:
         enabled: true
   rabbitmq:
-    port: 5672
-    host: localhost
     username: root
     password: root
     virtual-host: /zwt
+    host: localhost
+    port: 5672
+server:
+  port: 8088
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8000/eureka/
-feign:
-  hystrix:
-    enabled: true
 management:
   security:
     enabled: false

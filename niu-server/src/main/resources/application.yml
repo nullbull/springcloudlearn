@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: niu-server
-server:
-  port: 8088
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8000/eureka/

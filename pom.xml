@@ -12,6 +12,7 @@
         <module>niu-eureka</module>
         <module>niu-server</module>
         <module>niu-consumer</module>
+        <module>niu-config</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

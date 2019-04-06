@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="niu-consumer" />
         <module name="niu-eureka" />
+        <module name="eurake" />
+        <module name="niu-consumer" />
+        <module name="niu-config" />
         <module name="niu-server" />
       </profile>
     </annotationProcessing>
