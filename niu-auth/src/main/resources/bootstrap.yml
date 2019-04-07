@@ -1,13 +1,13 @@
-server:
-  port: 8089
 spring:
   application:
-    name: niu-config
+    name: niu-auth
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/nullbull/niu-config.git
+      profile: dev
+      name: application
+      discovery:
+        service-id: niu-config
+        enabled: true
     bus:
       trace:
         enabled: true
@@ -17,7 +17,8 @@ spring:
     virtual-host: /zwt
     host: localhost
     port: 5672
-#          default-label: ${spring.profiles.active}
+server:
+  port: 8091
 eureka:
   client:
     serviceUrl:

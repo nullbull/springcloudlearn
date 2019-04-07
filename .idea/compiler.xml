@@ -7,12 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="niu-eureka" />
-        <module name="eurake" />
         <module name="niu-consumer" />
-        <module name="niu-config" />
+        <module name="niu-eureka" />
+        <module name="niu-auth" />
         <module name="niu-server" />
+        <module name="niu-config" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="niu-gateway" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="niu-auth" options="-parameters" />
+      <module name="niu-config" options="-parameters" />
+      <module name="niu-consumer" options="-parameters" />
+      <module name="niu-eureka" options="-parameters" />
+      <module name="niu-gateway" options="-parameters" />
+      <module name="niu-server" options="-parameters" />
+    </option>
   </component>
 </project>
