@@ -13,6 +13,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.github</groupId>
+            <artifactId>niu-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>

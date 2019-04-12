@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   application:
     name: niu-auth
@@ -6,20 +8,32 @@ spring:
       profile: dev
       name: application
       discovery:
-        service-id: niu-config
         enabled: true
+        service-id: niu-config
     bus:
       trace:
         enabled: true
   rabbitmq:
+    port: 5672
+    host: localhost
     username: root
     password: root
     virtual-host: /zwt
-    host: localhost
-    port: 5672
-server:
-  port: 8091
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/helpeachother?connectTimeout=1000&useUnicode=true&characterEncoding=utf-8&useSSL=false
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8000/eureka/
+feign:
+  hystrix:
+    enabled: true
+management:
+  security:
+    enabled: false
+logging:
+  level:
+    org.springframework: debug

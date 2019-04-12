@@ -5,22 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03d56623-f673-4e6f-a671-74ea37be6a7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/niu-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-auth/src/test/java/com/github/niu/auth/service/UserRemoteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-auth/src/test/java/hh/config/MyAuthorizationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-auth/src/test/java/hh/config/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-auth/src/test/java/hh/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemoteHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/ServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/niu-eureka-server/2018-12/debug.2018-12-28.0.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/niu-eureka-server/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/niu-eureka-server/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niu-config/src/main/java/com/github/niu/config/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-config/src/main/java/com/github/niu/gateway/config/ConfigServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/niu-config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/niu-config/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/niu-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/OatuhApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/OatuhApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyAuthorizationServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyWebConfigAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-auth/src/test/java/hh/config/MyWebConfigAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-auth/src/test/java/hh/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-auth/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/niu-auth/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/niu-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/niu-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/niu-eureka/niu-eureka.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niu-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/niu-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/controller/ConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/HelloRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemoteHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/HelloRemoteHystrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-consumer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/niu-consumer/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/niu-work/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/ServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/niu-work/target/classes/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,31 +50,41 @@
     <ignored path="$PROJECT_DIR$/niu-config/target/" />
     <ignored path="$PROJECT_DIR$/niu-gateway/target/" />
     <ignored path="$PROJECT_DIR$/niu-auth/target/" />
+    <ignored path="$PROJECT_DIR$/niu-server/niu-api/target/" />
+    <ignored path="$PROJECT_DIR$/niu-server/niu-server/target/" />
+    <ignored path="$PROJECT_DIR$/niu-work/target/" />
+    <ignored path="$PROJECT_DIR$/niu-work/niu-server/target/" />
+    <ignored path="$PROJECT_DIR$/niu-work/niu-api/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/OatuhApplication.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/niu-auth/src/test/java/com/github/niu/auth/service/UserRemoteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyAuthorizationServerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,73 +93,93 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/controller/TestController.java">
+        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/SecurityConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+              <folding>
+                <element signature="e#2614#2615#0" expanded="true" />
+                <element signature="e#2695#2696#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/test.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.11.RELEASE/spring-security-core-5.0.11.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyWebConfigAdapter.java">
+        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="340">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserServiceImpl.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.11.RELEASE/spring-security-core-5.0.11.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="102">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.11.RELEASE/spring-security-config-5.0.11.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
+        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="162">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-auth/pom.xml">
+        <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/vo/UserVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="85">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/niu-server/pom.xml">
+        <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" selection-start-line="31" selection-end-line="37" />
+            <state relative-caret-position="204">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemoteHystrix.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/OAuth2ServerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -143,6 +191,7 @@
       <list>
         <option value="Interface" />
         <option value="XML Properties File" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -158,46 +207,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eurake/src/main/java/com.github.niu.eurake/EurekaServiceApplication.java" />
-        <option value="$PROJECT_DIR$/eurake/pom.xml" />
-        <option value="$PROJECT_DIR$/eurake/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/github/niu/server/ServerApplication.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/github/niu/server/Controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/server/pom.xml" />
-        <option value="$PROJECT_DIR$/niu-eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/niu-eureka/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/niu-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemoteHystrix.java" />
-        <option value="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/ServerApplication.java" />
-        <option value="$PROJECT_DIR$/niu-server/pom.xml" />
-        <option value="$PROJECT_DIR$/niu-server/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/niu-config/pom.xml" />
-        <option value="$PROJECT_DIR$/niu-config/src/main/java/com/github/niu/config/ConfigServerApplication.java" />
-        <option value="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/Controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/ConsumerController.java" />
-        <option value="$PROJECT_DIR$/niu-consumer/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/niu-gateway/src/main/java/com/github/niu/gateway/GatewayApplication.java" />
-        <option value="$PROJECT_DIR$/niu-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/niu-gateway/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/oatuh/demo/config/MyAuthorizationServerConfig.java" />
-        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/demo/config/MyAuthorizationServerConfig.java" />
-        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyAuthorizationServerConfig.java" />
-        <option value="$PROJECT_DIR$/niu-eureka/src/main/java/com.github.niu.eurake/EurekaServiceApplication.java" />
-        <option value="$PROJECT_DIR$/niu-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/niu-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemote.java" />
-        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/ConsumerApplication.java" />
-        <option value="$PROJECT_DIR$/niu-config/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/exception/UnauthorizedException.java" />
-        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/annotation/EnablePigFeignClients.java" />
-        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/component/PermissionService.java" />
         <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/component/PigAccessDeniedHandler.java" />
-        <option value="$PROJECT_DIR$/niu-auth/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyAuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/controller/TestController.java" />
         <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyWebConfigAdapter.java" />
-        <option value="$PROJECT_DIR$/niu-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/mybatis/MyTypeConvert.java" />
+        <option value="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/mybatis/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/Controller/UserController.java" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/HelloRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/MyUserDetails.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/Contants.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/common/CommonUtil.java" />
+        <option value="$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/ServerApplication.java" />
+        <option value="$PROJECT_DIR$/niu-server/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/niu-server/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/controller/HelloRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/HelloRemote.java" />
+        <option value="$PROJECT_DIR$/niu-work/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-work/niu-api/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-work/niu-server/src/main/resources/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/niu-work/niu-api/src/main/resources/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/niu-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/UserRemote.java" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/controller/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/niu-work/niu-server/src/test/java/com/github/niu/server/controller/UserControllerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/UserRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/niu-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/test/java/com/github/niu/consumer/service/HelloRemoteTest.java" />
+        <option value="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemote.java" />
+        <option value="$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/ConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/ServerApplication.java" />
+        <option value="$PROJECT_DIR$/niu-work/niu-server/pom.xml" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/OatuhApplication.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserRemote.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/controller/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/test.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetails.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/OAuth2ServerConfig.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/JdbcUserManager.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/vo/UserVO.java" />
+        <option value="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetailService.java" />
+        <option value="$PROJECT_DIR$/niu-auth/src/test/java/com/github/niu/auth/service/UserRemoteTest.java" />
       </list>
     </option>
   </component>
@@ -220,40 +280,21 @@
           <item name="niu" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="niu-eureka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="niu-eureka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="niu-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="niu-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1000" />
-    <option name="y" value="115" />
-    <option name="width" value="930" />
-    <option name="height" value="835" />
+    <option name="x" value="1912" />
+    <option name="y" value="-116" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,6 +381,19 @@
               <item name="github" type="462c0819:PsiDirectoryNode" />
               <item name="niu" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,7 +407,7 @@
               <item name="github" type="462c0819:PsiDirectoryNode" />
               <item name="niu" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="niu" type="b2602c69:ProjectViewProjectNode" />
@@ -361,6 +415,80 @@
               <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="github" type="462c0819:PsiDirectoryNode" />
@@ -371,25 +499,88 @@
             <path>
               <item name="niu" type="b2602c69:ProjectViewProjectNode" />
               <item name="niu" type="462c0819:PsiDirectoryNode" />
-              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="niu" type="b2602c69:ProjectViewProjectNode" />
               <item name="niu" type="462c0819:PsiDirectoryNode" />
-              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="niu" type="b2602c69:ProjectViewProjectNode" />
               <item name="niu" type="462c0819:PsiDirectoryNode" />
-              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="niu" type="b2602c69:ProjectViewProjectNode" />
               <item name="niu" type="462c0819:PsiDirectoryNode" />
-              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -397,18 +588,252 @@
             <path>
               <item name="niu" type="b2602c69:ProjectViewProjectNode" />
               <item name="niu" type="462c0819:PsiDirectoryNode" />
-              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="niu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="niu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="niu" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-work" type="462c0819:PsiDirectoryNode" />
+              <item name="niu-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -423,22 +848,56 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546655941478" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/niu-auth/src/main/resources" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.niu.consumer.service" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.github.niu.consumer.service" />
+      <recent name="com.github.niu.auth.service" />
+      <recent name="com.github.niu.server.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="hh" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\niu\niu-auth\src\main\java\com\github\niu\auth\service" />
+      <recent name="D:\Git\niu\niu-work\niu-server\src\main\resources" />
+      <recent name="D:\Git\niu\niu-work\niu-api" />
       <recent name="D:\Git\niu\niu-auth\src\main\resources" />
-      <recent name="D:\Git\niu\niu-auth\src\main\java\com\github\niu\auth" />
-      <recent name="D:\Git\niu\eurake\src\main\resources" />
+      <recent name="D:\Git\niu\niu-consumer\src\main\java\com\github\niu\consumer\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.niu.auth.service" />
+      <recent name="com.github.niu.server.mybatis" />
+      <recent name="com.github.niu.auth.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\niu\niu-work\niu-api\src\main\resources" />
+      <recent name="D:\Git\niu\niu-work\niu-server" />
+      <recent name="D:\Git\niu\niu-server\src\main\java\com\github\niu\server\mapper" />
+      <recent name="D:\Git\niu\niu-server\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -449,51 +908,34 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.15367965" />
   </component>
   <component name="RunManager" selected="Spring Boot.OatuhApplication">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="niu-eureka" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.niu.auth.config.test" />
+      <module name="niu-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.niu.auth.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="niu-eureka" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="HelloRemoteTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="niu-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.niu.consumer.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.niu.consumer.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.niu.consumer.service.HelloRemoteTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -511,27 +953,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="niu-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.niu.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.niu.consumer.ConsumerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="niu-eureka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.niu.eurake.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.niu.eurake.EurekaServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -550,7 +980,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="niu-server" />
       <extension name="coverage">
         <pattern>
@@ -566,10 +996,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.OatuhApplication" />
+        <item itemvalue="Spring Boot.ServerApplication (1)" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Spring Boot.EurekaServiceApplication" />
-        <item itemvalue="Spring Boot.ServerApplication" />
-        <item itemvalue="Spring Boot.ConsumerApplication" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="JUnit.HelloRemoteTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -594,12 +1024,59 @@
       <workItem from="1547547370813" duration="89000" />
       <workItem from="1554560340291" duration="2405000" />
       <workItem from="1554604145760" duration="5526000" />
-      <workItem from="1554619960328" duration="1667000" />
+      <workItem from="1554619960328" duration="1959000" />
+      <workItem from="1554818568968" duration="6388000" />
+      <workItem from="1554863394130" duration="74000" />
+      <workItem from="1554876674249" duration="15363000" />
+      <workItem from="1554892866231" duration="346000" />
+      <workItem from="1554893283221" duration="1000" />
+      <workItem from="1554893452751" duration="182000" />
+      <workItem from="1554893701739" duration="617000" />
+      <workItem from="1554948275639" duration="9128000" />
+      <workItem from="1554962243969" duration="8686000" />
+      <workItem from="1554979026734" duration="1713000" />
+      <workItem from="1554989489736" duration="3220000" />
+      <workItem from="1554993697043" duration="2369000" />
+      <workItem from="1554996851481" duration="721000" />
+      <workItem from="1555034264983" duration="139000" />
+      <workItem from="1555046254775" duration="9265000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="HelloRemoteTest_test - 2019.04.11 at 15h 41m 38s.xml">
+      <configuration name="HelloRemoteTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRemoteTest_hhh - 2019.04.11 at 17h 48m 05s.xml">
+      <configuration name="UserRemoteTest.hhh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRemoteTest_hhh - 2019.04.11 at 18h 14m 59s.xml">
+      <configuration name="UserRemoteTest.hhh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRemoteTest_hhh - 2019.04.11 at 18h 19m 04s.xml">
+      <configuration name="UserRemoteTest.hhh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRemoteTest_hhh - 2019.04.11 at 18h 21m 04s.xml">
+      <configuration name="UserRemoteTest.hhh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRemoteTest_hhh - 2019.04.11 at 18h 25m 31s.xml">
+      <configuration name="UserRemoteTest.hhh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRemoteTest_hhh - 2019.04.11 at 18h 25m 50s.xml">
+      <configuration name="UserRemoteTest.hhh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRemoteTest_hhh - 2019.04.11 at 18h 28m 23s.xml">
+      <configuration name="UserRemoteTest.hhh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HelloRemoteTest_test - 2019.04.11 at 18h 45m 42s.xml">
+      <configuration name="HelloRemoteTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HelloRemoteTest_test - 2019.04.11 at 18h 56m 24s.xml">
+      <configuration name="HelloRemoteTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36985000" />
+    <option name="totallyTimeSpent" value="95489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -611,39 +1088,40 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="1912" y="-116" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3163539" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8919308" visible="true" weight="0.26279318" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Structure" order="5" sideWeight="0.10806917" side_tool="true" weight="0.29850745" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.30058652" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.37243402" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5762463" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32991204" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.29178885" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5178174" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.10117302" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.04398827" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3596882" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.116926506" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2600536" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32944608" />
@@ -652,339 +1130,425 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetailService.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetailService.java</url>
+          <line>20</line>
+          <properties field="userRemote" class="com.github.niu.auth.config.MyUserDetailService" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-config-client/1.4.4.RELEASE/spring-cloud-config-client-1.4.4.RELEASE.jar!/org/springframework/cloud/config/client/ConfigClientProperties.class">
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/Controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/ConsumerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-gateway/niugateway.iml" />
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-gateway/src/main/java/com/github/niu/config.java" />
-    <entry file="file://$PROJECT_DIR$/niu-config/pom.xml">
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/test/java/com/github/niu/server/controller/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.3.RELEASE/spring-boot-actuator-autoconfigure-2.1.3.RELEASE.jar!/META-INF/spring-configuration-metadata.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-eureka/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-config/src/main/java/com/github/niu/gateway/config/ConfigServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-gateway/src/main/java/com/github/niu/gateway/GatewayApplication.java">
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/Contants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemoteHystrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/niu-consumer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+        <state relative-caret-position="170">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/ConsumerController.java">
+    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/HelloRemote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/mybatis/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/UserRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-gateway/src/main/resources/bootstrap.yml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-openfeign-core/2.0.3.RELEASE/spring-cloud-openfeign-core-2.0.3.RELEASE.jar!/org/springframework/cloud/openfeign/FeignClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-gateway/pom.xml">
+    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/UserRemoteHystrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-eureka/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+        <state relative-caret-position="153">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="357">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-server/src/main/java/com/github/niu/server/ServerApplication.java">
+    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/controller/ConsumerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="510">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-consumer/src/test/java/com/github/niu/consumer/service/HelloRemoteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/niu-eureka/src/main/java/com.github.niu.eurake/EurekaServiceApplication.java">
+    <entry file="file://$PROJECT_DIR$/niu-eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1224">
+          <caret line="72" selection-start-line="72" selection-end-line="98" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/niu-config/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/ConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/Controller/HelloRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/component/ResourceAuthExceptionEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/util/SecurityUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/component/PigSecurityInnerAspect.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/exception/InvalidException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/exception/MethodNotAllowed.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/feign/PigFeignClientConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/handler/MobileLoginSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/exception/UnauthorizedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/annotation/EnablePigFeignClients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/annotation/EnablePigResourceServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/annotation/Inner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/component/PermissionService.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/security/component/PigAccessDeniedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="23" column="19" selection-start-line="23" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.11.RELEASE/spring-security-config-5.0.11.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/OatuhApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyWebConfigAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyAuthorizationServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/niu-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="37" />
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/niu-auth/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="493">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/service/HelloRemoteHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/web/TestEndpoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="9" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-consumer/src/main/java/com/github/niu/consumer/ConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-config/src/main/java/com/github/niu/gateway/config/ConfigServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/service/UserRemoteHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/OatuhApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-server/src/main/java/com/github/niu/server/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/common/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/HelloRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/controller/ConsumerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.5.RELEASE/spring-security-oauth2-2.3.5.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/builders/ClientDetailsServiceBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="167" column="60" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.11.RELEASE/spring-security-core-5.0.11.RELEASE.jar!/org/springframework/security/core/authority/AuthorityUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.11.RELEASE/spring-security-core-5.0.11.RELEASE.jar!/org/springframework/security/provisioning/JdbcUserDetailsManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/JdbcUserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.11.RELEASE/spring-security-core-5.0.11.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.11.RELEASE/spring-security-core-5.0.11.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/vo/UserVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemoteHystrix.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-work/niu-api/src/main/java/com/github/niu/consumer/service/UserRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <element signature="e#2614#2615#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/OAuth2ServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/main/java/com/github/niu/auth/config/MyUserDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niu-auth/src/test/java/com/github/niu/auth/service/UserRemoteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1040,12 +1604,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>niugateway</last-edited>
+          <last-edited>Spring|niu-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.5286697" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
