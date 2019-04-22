@@ -1,4 +1,4 @@
-package com.github.niu.auth.config;
+package com.github.niu.auth.service;
 
 import com.github.niu.auth.common.CommonUtil;
 import com.github.niu.consumer.vo.UserVO;

@@ -8,7 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="niu-consumer" />
+        <module name="niu-express-api" />
+        <module name="niu-common" />
         <module name="niu-api" />
+        <module name="niu-express-server" />
         <module name="niu-eureka" />
         <module name="niu-auth" />
         <module name="niu-server" />
@@ -23,9 +26,13 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="niu-api" options="-parameters" />
       <module name="niu-auth" options="-parameters" />
+      <module name="niu-common" options="-parameters" />
       <module name="niu-config" options="-parameters" />
       <module name="niu-consumer" options="-parameters" />
       <module name="niu-eureka" options="-parameters" />
+      <module name="niu-express" options="-parameters" />
+      <module name="niu-express-api" options="-parameters" />
+      <module name="niu-express-server" options="-parameters" />
       <module name="niu-gateway" options="-parameters" />
       <module name="niu-server" options="-parameters" />
       <module name="niu-work" options="-parameters" />
