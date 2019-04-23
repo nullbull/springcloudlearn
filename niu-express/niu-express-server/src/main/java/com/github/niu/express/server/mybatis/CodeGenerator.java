@@ -60,7 +60,7 @@ public class CodeGenerator {
             strategy.setColumnNaming(NamingStrategy.underline_to_camel);
             strategy.setEntityLombokModel(false);
             strategy.setRestControllerStyle(false);
-            strategy.setInclude("express", "express_order");
+            strategy.setInclude("express_order");
 
             /**设置生成类的前缀**/
 //            strategy.setTablePrefix( "t_");
