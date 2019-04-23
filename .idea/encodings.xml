@@ -10,6 +10,9 @@
     <file url="file://$PROJECT_DIR$/niu-express" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/niu-express/niu-express-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/niu-express/niu-express-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/niu-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/niu-message/niu-message-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/niu-message/niu-message-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/niu-work" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/niu-work/niu-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/niu-work/niu-server" charset="UTF-8" />
