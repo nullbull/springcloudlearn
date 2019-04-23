@@ -47,11 +47,13 @@ public class ExpressOrder implements Serializable, Magic {
 
     private String getNickname;
 
-    private Byte epxressType;
+    private Byte expressType;
 
     private Byte packageType;
 
     private String getPhone;
 
     private Date finishedAt;
+
+    private Date beginAt;
 }
