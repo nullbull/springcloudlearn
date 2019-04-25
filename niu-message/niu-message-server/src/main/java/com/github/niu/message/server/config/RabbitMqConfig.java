@@ -23,6 +23,15 @@ public class RabbitMqConfig {
 
     @Value("${rabbit-mq.emailQueue}")
     private String EMAIL_QUEUE;
+
+    @Value("${rabbit-mq.smsExchange}")
+    private String SMS_EXCHANGE;
+
+    @Value("${rabbit-mq.smsQueue}")
+    private String SMS_QUEUE;
+
+
+
     @Bean(name = "create.a")
     public Queue createA() {
         return new Queue(CreateA);
@@ -62,6 +71,20 @@ public class RabbitMqConfig {
     @Bean
     public Binding directBinding() {
         return BindingBuilder.bind(emailQueue()).to(exchangeDirect()).with(EMAIL_QUEUE);
+    }
+
+
+    @Bean(name = "sms")
+    public Queue smsQueue() {
+        return new Queue(SMS_QUEUE);
+    }
+    @Bean
+    public DirectExchange smsDirectExchange() {
+        return new DirectExchange(SMS_EXCHANGE);
+    }
+    @Bean
+    public Binding smsBinding() {
+        return BindingBuilder.bind(smsQueue()).to(smsDirectExchange()).with(SMS_QUEUE);
     }
 
 }
