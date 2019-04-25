@@ -10,6 +10,10 @@ import com.github.niu.express.api.models.dto.OrderDTO;
 import com.github.niu.express.server.models.ExpressOrder;
 import com.github.niu.express.server.mapper.ExpressOrderMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -23,7 +27,14 @@ import java.util.Date;
  * @since 2019-04-22
  */
 @Service
+//@PropertySource()
 public class ExpressOrderServiceImpl extends ServiceImpl<ExpressOrderMapper, ExpressOrder> implements IExpressOrderService {
+
+    @Autowired
+    private AmqpTemplate amqpTemplate;
+
+    @Autowired
+    private KafkaProperties kafkaProperties;
 
     @Override
     public int createExpress(ExpressDTO dto) throws Exception {

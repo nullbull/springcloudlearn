@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 @RefreshScope
-
 public class HelloController {
     @Value("${niu.test}")
     private String zwt;

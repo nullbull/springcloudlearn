@@ -1,4 +1,4 @@
-package com.github.niu.message.config;
+package com.github.niu.message.server.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Value;
