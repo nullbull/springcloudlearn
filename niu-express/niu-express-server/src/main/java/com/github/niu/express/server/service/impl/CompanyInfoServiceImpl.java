@@ -1,4 +1,4 @@
-package com.github.niu.express.server.service;
+package com.github.niu.express.server.service.impl;
 
 import com.github.niu.express.server.models.CompanyInfo;
 import com.github.niu.express.server.mapper.CompanyInfoMapper;

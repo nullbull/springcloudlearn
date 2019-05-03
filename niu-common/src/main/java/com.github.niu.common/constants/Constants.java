@@ -14,4 +14,19 @@ public interface Constants {
     Byte EXPRESS_STATUS_FINISHED  = 3;
 
     Byte EXPRESS_STATUS_DEL = 0;
+
+
+    Byte ADDRESS_STATUS_DEFAULT = 1;
+
+    Byte ADDRESS_STATUS_SECOND = 2;
+
+    Byte ADDRESS_STATUS_DELETE = 0;
+
+    Byte BOAT_STATUS_NEW  = 1;
+
+    Byte BOAT_STATUS_PROCESS = 2;
+
+    Byte BOAT_STATUS_END = 3;
+
+    Byte BOAT_STATUS_FINISHED = 4;
 }

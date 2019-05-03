@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
     name: niu-auth
@@ -37,7 +37,8 @@ management:
     enabled: false
 logging:
   level:
-    org.springframework: debug# 熔断器超时时间，默认：1000/毫秒
+    org.springframework: debug
+    # 熔断器超时时间，默认：1000/毫秒
 hystrix:
   metrics:
     polling-interval-ms: 3000

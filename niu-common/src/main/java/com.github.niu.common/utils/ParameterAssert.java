@@ -2,7 +2,10 @@ package com.github.niu.common.utils;
 
 
 import com.github.niu.common.enums.ErrorCodeEnum;
+import com.github.niu.common.exceptions.AddressException;
+import com.github.niu.common.exceptions.BoatException;
 import com.github.niu.common.exceptions.ExpressException;
+import com.github.niu.common.exceptions.TicketException;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 
@@ -34,6 +37,48 @@ public class ParameterAssert {
     public static void isExpressValid(final Object o, int code, String msg) throws Exception{
         isValid(o, new ExpressException(code, msg));
     }
+
+    public static void isAddressValid(final Object o) throws Exception {
+        isAddressValid(o, "参数不能为空");
+    }
+    public static void isAddressValid(final Object o, final ErrorCodeEnum codeEnum) throws Exception{
+        isAddressValid(o, codeEnum.getCode(), codeEnum.getMessage());
+    }
+    public static void isAddressValid(final Object o, String msg) throws Exception{
+        isAddressValid(o, INVALID_ARGS, msg);
+    }
+    public static void isAddressValid(final Object o, int code, String msg) throws Exception{
+        isValid(o, new AddressException(code, msg));
+    }
+
+
+    public static void isTicketValid(final Object o) throws Exception {
+        isTicketValid(o, "参数不能为空");
+    }
+    public static void isTicketValid(final Object o, final ErrorCodeEnum codeEnum) throws Exception{
+        isTicketValid(o, codeEnum.getCode(), codeEnum.getMessage());
+    }
+    public static void isTicketValid(final Object o, String msg) throws Exception{
+        isTicketValid(o, INVALID_ARGS, msg);
+    }
+    public static void isTicketValid(final Object o, int code, String msg) throws Exception{
+        isValid(o, new TicketException(code, msg));
+    }
+
+
+    public static void isBoatValid(final Object o) throws Exception {
+        isBoatValid(o, "参数不能为空");
+    }
+    public static void isBoatValid(final Object o, final ErrorCodeEnum codeEnum) throws Exception{
+        isBoatValid(o, codeEnum.getCode(), codeEnum.getMessage());
+    }
+    public static void isBoatValid(final Object o, String msg) throws Exception{
+        isBoatValid(o, INVALID_ARGS, msg);
+    }
+    public static void isBoatValid(final Object o, int code, String msg) throws Exception{
+        isValid(o, new BoatException(code, msg));
+    }
+
 //
 //
 //    public static void isStudyValid(final Object o) throws Exception {

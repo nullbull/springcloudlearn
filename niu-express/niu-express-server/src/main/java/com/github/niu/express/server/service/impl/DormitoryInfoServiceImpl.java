@@ -1,4 +1,4 @@
-package com.github.niu.express.server.service;
+package com.github.niu.express.server.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.niu.express.server.models.DormitoryInfo;

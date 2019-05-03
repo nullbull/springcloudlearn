@@ -39,13 +39,4 @@ public class OatuhApplication {
     private String username;
     @Value("${spring.datasource.url}")
     private String url;
-//    @Bean("myDataSource")
-//    public DataSource dataSource() {
-//        HikariConfig hikariConfig = new HikariConfig();
-//        hikariConfig.addDataSourceProperty("password", password);
-//        hikariConfig.addDataSourceProperty("username", username);
-//        hikariConfig.addDataSourceProperty("jdbcUrl", url);
-//        hikariConfig.addDataSourceProperty("driverClassName", driverName);
-//        return hikariConfig.getDataSource();
-//    }
 }

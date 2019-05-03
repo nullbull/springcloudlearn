@@ -1,4 +1,4 @@
-package com.github.niu.express.server.service;
+package com.github.niu.express.server.service.impl;
 
 import com.github.niu.common.constants.Constants;
 import com.github.niu.common.enums.ErrorCodeEnum;
@@ -10,6 +10,7 @@ import com.github.niu.express.api.models.dto.OrderDTO;
 import com.github.niu.express.server.models.ExpressOrder;
 import com.github.niu.express.server.mapper.ExpressOrderMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.github.niu.express.server.service.IExpressOrderService;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
