@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.github.niu.express.server.mapper.BoatMapper">
+    <select id="selectByQueryDTO" resultType="com.github.niu.express.api.models.vo.BoatVO">
+        select * from boat where 1 = 1
+        <if test="companyId != null">
+            and company_id = #{companyId}
+        </if>
+        <if test="beginAt != null">
+            and begin_at &gt;= beginAt
+        </if>
+        <if test="endAt != null">
+            and end_at &lt;= endAt
+        </if>
+        limit #{offset}, #{pageSize}
+    </select>
 
+
+    <select id="selectTotalByQueryDTO" resultType="java.lang.Integer">
+        select count(*) from boat where 1 = 1
+        <if test="companyId != null">
+            and company_id = #{companyId}
+        </if>
+        <if test="beginAt != null">
+            and begin_at &gt;= beginAt
+        </if>
+        <if test="endAt != null">
+            and end_at &lt;= endAt
+        </if>
+    </select>
 </mapper>

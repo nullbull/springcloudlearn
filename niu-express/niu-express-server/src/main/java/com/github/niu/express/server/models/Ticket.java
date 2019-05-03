@@ -1,12 +1,14 @@
 package com.github.niu.express.server.models;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.math.BigDecimal;
 import java.util.Date;
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author System
@@ -16,6 +18,7 @@ public class Ticket implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId
     private Long id;
 
     private Long boatId;

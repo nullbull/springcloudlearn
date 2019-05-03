@@ -1,24 +1,17 @@
-package com.github.niu.express.server.models;
+package com.github.niu.express.api.models.vo;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.io.Serializable;
 
 /**
- * <p>
- *
- * </p>
- *
- * @author System
- * @since 2019-05-03
+ * @author 牛贞昊（niuzhenhao@58.com）
+ * @date 2019/5/3 16:32
+ * @desc
  */
 @Data
-public class Boat implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-
+public class BoatVO {
     private Long id;
 
     private Byte smallCount;

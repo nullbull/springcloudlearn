@@ -29,4 +29,10 @@ public interface Constants {
     Byte BOAT_STATUS_END = 3;
 
     Byte BOAT_STATUS_FINISHED = 4;
+
+    Byte TICKET_STATUS_NEW = 1;
+
+    Byte TICKET_STATUS_CANCEL = 2;
+
+    Byte TICKET_STATUS_FINISHED = 3;
 }

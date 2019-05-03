@@ -27,5 +27,7 @@ public class BaseQueryDTO {
         this.pageSize = this.pageSize == null ? DEFAULT_PAGE_SIZE : (this.pageSize <= 0 ? DEFAULT_PAGE_SIZE : this.pageSize);
     }
 
+    public Integer offset = pageNo * pageSize;
+
 
 }
