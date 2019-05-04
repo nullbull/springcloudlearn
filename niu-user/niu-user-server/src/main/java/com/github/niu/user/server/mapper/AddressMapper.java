@@ -1,8 +1,8 @@
-package com.github.niu.express.server.mapper;
+package com.github.niu.user.server.mapper;
 
-import com.github.niu.express.api.models.vo.AddressVO;
-import com.github.niu.express.server.models.Address;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.github.niu.user.api.vo.AddressVO;
+import com.github.niu.user.server.models.Address;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -16,5 +16,5 @@ import java.util.List;
  * @since 2019-05-03
  */
 public interface AddressMapper extends BaseMapper<Address> {
-    List<AddressVO> selectByUserId(@Param("userId")Long id);
+    List<AddressVO> selectByUserId(@Param("userId") Long id);
 }

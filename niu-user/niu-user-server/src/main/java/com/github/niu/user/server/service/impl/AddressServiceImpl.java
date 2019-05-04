@@ -1,16 +1,16 @@
-package com.github.niu.express.server.service.impl;
+package com.github.niu.user.server.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.niu.common.constants.Constants;
 import com.github.niu.common.enums.ErrorCodeEnum;
 import com.github.niu.common.utils.ParameterAssert;
 import com.github.niu.common.utils.SnowFlowerUtils;
-import com.github.niu.express.api.models.dto.AddressDTO;
-import com.github.niu.express.api.models.vo.AddressVO;
-import com.github.niu.express.server.models.Address;
-import com.github.niu.express.server.mapper.AddressMapper;
-import com.github.niu.express.server.service.IAddressService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.github.niu.express.server.service.IDormitoryInfoService;
+import com.github.niu.express.api.service.IDormitoryInfoRemote;
+import com.github.niu.user.api.dto.AddressDTO;
+import com.github.niu.user.api.vo.AddressVO;
+import com.github.niu.user.server.mapper.AddressMapper;
+import com.github.niu.user.server.models.Address;
+import com.github.niu.user.server.service.IAddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,10 +29,11 @@ import java.util.List;
 public class AddressServiceImpl extends ServiceImpl<AddressMapper, Address> implements IAddressService {
 
     @Autowired
-    IDormitoryInfoService dormitoryInfoService;
+    IDormitoryInfoRemote dormitoryInfoRemote;
+
     @Override
     public int createAddress(@NotNull AddressDTO dto) throws Exception {
-        String locationName = dormitoryInfoService.getById(dto.getLocationId()).getName();
+        String locationName = dormitoryInfoRemote.getNameById(dto.getLocationId());
         Address address = new Address();
         address.setLocationName(locationName);
         address = dto.apply(address);

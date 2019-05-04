@@ -17,6 +17,7 @@
         <module>niu-express</module>
         <module>niu-common</module>
         <module>niu-message</module>
+        <module>niu-user</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,4 +1,4 @@
-package com.github.niu.express.server.controller;
+package com.github.niu.user.server.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;

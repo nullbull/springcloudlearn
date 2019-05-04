@@ -1,4 +1,4 @@
-package com.github.niu.express.api.models.vo;
+package com.github.niu.user.api.vo;
 
 /**
  * @author 牛贞昊（niuzhenhao@58.com）

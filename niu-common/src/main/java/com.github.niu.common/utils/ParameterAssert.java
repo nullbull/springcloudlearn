@@ -2,10 +2,7 @@ package com.github.niu.common.utils;
 
 
 import com.github.niu.common.enums.ErrorCodeEnum;
-import com.github.niu.common.exceptions.AddressException;
-import com.github.niu.common.exceptions.BoatException;
-import com.github.niu.common.exceptions.ExpressException;
-import com.github.niu.common.exceptions.TicketException;
+import com.github.niu.common.exceptions.*;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 
@@ -77,6 +74,34 @@ public class ParameterAssert {
     }
     public static void isBoatValid(final Object o, int code, String msg) throws Exception{
         isValid(o, new BoatException(code, msg));
+    }
+
+
+    public static void isUserValid(final Object o) throws Exception {
+        isUserValid(o, "参数不能为空");
+    }
+    public static void isUserValid(final Object o, final ErrorCodeEnum codeEnum) throws Exception{
+        isUserValid(o, codeEnum.getCode(), codeEnum.getMessage());
+    }
+    public static void isUserValid(final Object o, String msg) throws Exception{
+        isUserValid(o, INVALID_ARGS, msg);
+    }
+    public static void isUserValid(final Object o, int code, String msg) throws Exception{
+        isValid(o, new UserException(code, msg));
+    }
+
+
+    public static void isDriverValid(final Object o) throws Exception {
+        isDriverValid(o, "参数不能为空");
+    }
+    public static void isDriverValid(final Object o, final ErrorCodeEnum codeEnum) throws Exception{
+        isDriverValid(o, codeEnum.getCode(), codeEnum.getMessage());
+    }
+    public static void isDriverValid(final Object o, String msg) throws Exception{
+        isDriverValid(o, INVALID_ARGS, msg);
+    }
+    public static void isDriverValid(final Object o, int code, String msg) throws Exception{
+        isValid(o, new DriverException(code, msg));
     }
 
 //
