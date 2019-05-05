@@ -1,10 +1,12 @@
 package com.github.niu.user.server.service;
 
 import com.github.niu.user.api.dto.DriverDTO;
+import com.github.niu.user.api.vo.DriverVO;
 import com.github.niu.user.server.models.Driver;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 /**
  * <p>
@@ -18,4 +20,8 @@ public interface IDriverService extends IService<Driver> {
     int createDriver(@NotNull DriverDTO dto) throws Exception;
 
     int certificationDriver(@NotNull Long id, @NotNull Byte status) throws Exception;
+
+    List<DriverVO> getAll() throws Exception;
+
+    DriverVO getByUserId(Long userId) throws Exception;
 }

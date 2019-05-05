@@ -1,4 +1,4 @@
-package com.github.niu.express.server.service;
+package com.github.niu.express.server.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.niu.common.constants.Constants;
@@ -10,6 +10,7 @@ import com.github.niu.express.api.models.dto.TicketDTO;
 import com.github.niu.express.server.models.Ticket;
 import com.github.niu.express.server.mapper.TicketMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.github.niu.express.server.service.ITicketService;
 import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;

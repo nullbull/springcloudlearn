@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -17,16 +19,17 @@ import org.springframework.stereotype.Controller;
  * @author System
  * @since 2019-04-13
  */
-@Controller
+@RestController
 @RequestMapping("/dormitoryInfo")
 public class DormitoryInfoController {
     @Autowired
     IDormitoryInfoService dormitoryInfoService;
 
-    @RequestMapping("/get/{id}")
+    @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
     public String getById(@PathVariable("id") Byte id) throws Exception {
         ParameterAssert.isAddressValid(id);
-        return dormitoryInfoService.getById(id).getName();
+        String name = dormitoryInfoService.getByInfoID(id).getName();
+        return name;
     }
 
 }

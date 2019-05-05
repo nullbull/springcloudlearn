@@ -1,6 +1,7 @@
 package com.github.niu.common.utils;
 
 
+import com.github.niu.common.constants.Constants;
 import com.github.niu.common.enums.ErrorCodeEnum;
 import com.github.niu.common.exceptions.*;
 import org.apache.commons.collections.CollectionUtils;
@@ -102,6 +103,12 @@ public class ParameterAssert {
     }
     public static void isDriverValid(final Object o, int code, String msg) throws Exception{
         isValid(o, new DriverException(code, msg));
+    }
+
+    public static void isAddressStatusValid(Byte s) throws Exception {
+        if (!Constants.ADDRESS_STATUS_LIST.contains(s)) {
+            throw new AddressException("未知操作");
+        }
     }
 
 //

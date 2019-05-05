@@ -1,9 +1,14 @@
 package com.github.niu.common.constants;
 
 import com.github.niu.common.exceptions.ExpressException;
+import com.github.niu.common.utils.CommonUtil;
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.ConvertUtils;
+import org.apache.commons.beanutils.converters.*;
 
 import java.lang.reflect.InvocationTargetException;
+import java.math.BigDecimal;
+import java.util.Date;
 import java.util.Optional;
 
 /**
@@ -12,9 +17,7 @@ import java.util.Optional;
  * @desc
  */
 public interface Magic {
-
     default<T> T apply(T o) throws Exception {
-        BeanUtils.copyProperties(Optional.of(o).orElseThrow(() -> new ExpressException("参数不能为空")), this);
-        return o;
+        return CommonUtil.apply(o, this);
     }
 }

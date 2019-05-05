@@ -30,7 +30,7 @@ public class DormitoryInfoServiceImpl extends ServiceImpl<DormitoryInfoMapper, D
     }
 
     @Override
-    public DormitoryInfo getById(Byte id) throws Exception {
+    public DormitoryInfo getByInfoID(Byte id) throws Exception {
         return baseMapper.selectById(id);
     }
 

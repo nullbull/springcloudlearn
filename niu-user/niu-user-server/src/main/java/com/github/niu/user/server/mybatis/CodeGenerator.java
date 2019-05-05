@@ -60,7 +60,7 @@ public class CodeGenerator {
             strategy.setColumnNaming(NamingStrategy.underline_to_camel);
             strategy.setEntityLombokModel(false);
             strategy.setRestControllerStyle(false);
-            strategy.setInclude("driver");
+            strategy.setInclude("address");
 
             /**设置生成类的前缀**/
 //            strategy.setTablePrefix( "t_");

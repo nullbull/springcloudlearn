@@ -19,7 +19,9 @@ import java.util.List;
 public interface IAddressService extends IService<Address> {
     int createAddress(AddressDTO dto) throws Exception;
 
-    int deleteAddress(@NotNull(message = "id不能为空") Long id) throws Exception;
+//    int deleteAddress(@NotNull(message = "id不能为空") Long id) throws Exception;
 
     List<AddressVO> getByUserId(@NotNull(message = "用户ID不能为空") Long userId) throws Exception;
+
+    int changeStatus(@NotNull Long id, @NotNull Byte status) throws Exception;
 }

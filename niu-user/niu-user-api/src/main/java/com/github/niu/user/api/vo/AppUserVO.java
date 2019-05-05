@@ -1,23 +1,17 @@
-package com.github.niu.user.server.models;
+package com.github.niu.user.api.vo;
 
+import com.github.niu.common.constants.Magic;
 import lombok.Data;
 
 import java.util.Date;
-import java.io.Serializable;
 
 /**
- * <p>
- *
- * </p>
- *
- * @author System
- * @since 2019-05-03
+ * @author 牛贞昊（niuzhenhao@58.com）
+ * @date 2019/5/5 10:17
+ * @desc
  */
 @Data
-public class AppUser implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-
+public class AppUserVO implements Magic {
     private Long id;
 
     private String nickname;
@@ -28,7 +22,7 @@ public class AppUser implements Serializable {
 
     private String phone;
 
-    private String content;
+    private String desc;
 
     private Integer point;
 

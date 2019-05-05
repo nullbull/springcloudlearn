@@ -17,7 +17,7 @@ public interface IDormitoryInfoService extends IService<DormitoryInfo> {
 
     List<DormitoryInfo> getByDepartId(Byte id) throws Exception;
 
-    DormitoryInfo getById(Byte id) throws Exception;
+    DormitoryInfo getByInfoID(Byte id) throws Exception;
 
     DormitoryInfo getByName(String name) throws Exception;
 
