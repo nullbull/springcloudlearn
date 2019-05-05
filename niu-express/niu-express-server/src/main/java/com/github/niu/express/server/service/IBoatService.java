@@ -33,4 +33,12 @@ public interface IBoatService extends IService<Boat> {
     * @throws Exception
     */
    Page<BoatVO> getByQueryDTO(BoatQueryDTO dto) throws Exception;
+
+   /**
+    *
+    * @param userId
+    * @return
+    * @throws Exception
+    */
+   List<BoatVO> getByUserId(Long userId) throws Exception;
 }

@@ -14,6 +14,7 @@ import java.util.List;
  * @since 2019-04-13
  */
 public interface IDormitoryInfoService extends IService<DormitoryInfo> {
+
     List<DormitoryInfo> getByDepartId(Byte id) throws Exception;
 
     DormitoryInfo getById(Byte id) throws Exception;

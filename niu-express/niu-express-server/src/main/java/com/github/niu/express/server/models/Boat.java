@@ -1,5 +1,7 @@
 package com.github.niu.express.server.models;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.github.niu.common.constants.Magic;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -15,10 +17,11 @@ import java.io.Serializable;
  * @since 2019-05-03
  */
 @Data
-public class Boat implements Serializable {
+public class Boat implements Serializable, Magic {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId
     private Long id;
 
     private Byte smallCount;
@@ -41,7 +44,7 @@ public class Boat implements Serializable {
 
     private String driverNickname;
 
-    private String desc;
+    private String content;
 
     private Date beginAt;
 

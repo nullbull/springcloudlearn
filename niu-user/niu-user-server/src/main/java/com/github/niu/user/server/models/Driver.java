@@ -1,15 +1,19 @@
 package com.github.niu.user.server.models;
 
+import lombok.Data;
+
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author System
  * @since 2019-05-03
  */
+@Data
 public class Driver implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -26,64 +30,7 @@ public class Driver implements Serializable {
 
     private String picture;
 
+    private Byte status;
 
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public String getRealname() {
-        return realname;
-    }
-
-    public void setRealname(String realname) {
-        this.realname = realname;
-    }
-
-    public String getIdNumber() {
-        return idNumber;
-    }
-
-    public void setIdNumber(String idNumber) {
-        this.idNumber = idNumber;
-    }
-
-    public String getSchoolId() {
-        return schoolId;
-    }
-
-    public void setSchoolId(String schoolId) {
-        this.schoolId = schoolId;
-    }
-
-    public String getLocationMessage() {
-        return locationMessage;
-    }
-
-    public void setLocationMessage(String locationMessage) {
-        this.locationMessage = locationMessage;
-    }
-
-    public String getPicture() {
-        return picture;
-    }
-
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
-
-    @Override
-    public String toString() {
-        return "Driver{" +
-        "userId=" + userId +
-        ", realname=" + realname +
-        ", idNumber=" + idNumber +
-        ", schoolId=" + schoolId +
-        ", locationMessage=" + locationMessage +
-        ", picture=" + picture +
-        "}";
-    }
+    private Date createAt;
 }

@@ -42,4 +42,5 @@ public class AppUser implements Serializable {
 
     private Date updateAt;
 
+    private Byte type;
 }

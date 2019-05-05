@@ -41,7 +41,7 @@ public class BoatDTO implements Magic {
     @NotNull(message = "摆渡人昵称")
     private String driverNickname;
 
-    private String desc;
+    private String content;
 
     @NotNull(message = "开船时间")
     private Date beginAt;

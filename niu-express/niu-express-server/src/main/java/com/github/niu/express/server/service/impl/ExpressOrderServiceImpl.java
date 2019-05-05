@@ -31,11 +31,11 @@ import java.util.Date;
 //@PropertySource()
 public class ExpressOrderServiceImpl extends ServiceImpl<ExpressOrderMapper, ExpressOrder> implements IExpressOrderService {
 
-    @Autowired
-    private AmqpTemplate amqpTemplate;
-
-    @Autowired
-    private KafkaProperties kafkaProperties;
+//    @Autowired
+//    private AmqpTemplate amqpTemplate;
+//
+//    @Autowired
+//    private KafkaProperties kafkaProperties;
 
     @Override
     public int createExpress(ExpressDTO dto) throws Exception {

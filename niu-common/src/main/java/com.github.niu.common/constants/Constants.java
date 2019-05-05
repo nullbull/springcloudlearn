@@ -35,4 +35,14 @@ public interface Constants {
     Byte TICKET_STATUS_CANCEL = 2;
 
     Byte TICKET_STATUS_FINISHED = 3;
+
+    Byte USER_TYPE_NORMAL = 1;
+
+    Byte USER_TYPE_DRIVER = 2;
+
+    Byte DRIVER_STATUS_NEW  = 1;
+
+    Byte DRIVER_STATUS_ALLOWED = 2;
+
+    Byte DRIVER_STATUS_FORBIDDEN = 3;
 }

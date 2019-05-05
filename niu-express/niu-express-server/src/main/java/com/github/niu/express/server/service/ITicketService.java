@@ -23,4 +23,5 @@ public interface ITicketService extends IService<Ticket> {
     List<Ticket> getByUserId(@NotNull(message = "用户id 不能为空") Long userId) throws Exception;
 
     int changeStatus(@NotNull(message = "船票ID不能为空") Long id, @NotNull(message = "status不能为空") Byte status) throws Exception;
+
 }

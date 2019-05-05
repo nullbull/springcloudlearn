@@ -14,4 +14,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IAppUserService extends IService<AppUser> {
     int createUser(AppUserDTO dto) throws Exception;
+
+    int changeUserType(Long id, Byte status) throws Exception;
 }
