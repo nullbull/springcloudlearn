@@ -6,6 +6,7 @@ import com.github.niu.express.api.models.dto.TicketDTO;
 import com.github.niu.express.server.service.ITicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
@@ -27,7 +28,7 @@ public class TicketController {
     ITicketService ticketService;
 
     @RequestMapping("/add")
-    public int create(@RequestParam TicketDTO dto) throws Exception {
+    public int create(@RequestBody TicketDTO dto) throws Exception {
         return ticketService.createTicket(dto);
     }
     @RequestMapping("/finished/{id}")

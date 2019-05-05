@@ -1,14 +1,11 @@
 package com.github.niu.user.server.service.impl;
 
 import com.github.niu.common.constants.Constants;
-import com.github.niu.user.api.dto.DriverDTO;
-import com.github.niu.user.server.models.Driver;
+import com.github.niu.user.api.models.dto.DriverDTO;
 import com.github.niu.user.server.service.IDriverService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import static org.junit.Assert.*;
 
 /**
  * @author 牛贞昊（niuzhenhao@58.com）

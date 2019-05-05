@@ -1,7 +1,7 @@
 package com.github.niu.user.server.service;
 
-import com.github.niu.user.api.dto.AppUserDTO;
-import com.github.niu.user.api.vo.AppUserVO;
+import com.github.niu.user.api.models.dto.AppUserDTO;
+import com.github.niu.user.api.models.vo.AppUserVO;
 import com.github.niu.user.server.models.AppUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 

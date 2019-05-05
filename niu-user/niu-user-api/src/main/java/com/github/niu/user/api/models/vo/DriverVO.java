@@ -1,4 +1,4 @@
-package com.github.niu.user.api.vo;
+package com.github.niu.user.api.models.vo;
 
 import com.github.niu.common.constants.Magic;
 

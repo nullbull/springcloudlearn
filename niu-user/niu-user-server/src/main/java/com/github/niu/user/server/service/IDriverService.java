@@ -1,7 +1,7 @@
 package com.github.niu.user.server.service;
 
-import com.github.niu.user.api.dto.DriverDTO;
-import com.github.niu.user.api.vo.DriverVO;
+import com.github.niu.user.api.models.dto.DriverDTO;
+import com.github.niu.user.api.models.vo.DriverVO;
 import com.github.niu.user.server.models.Driver;
 import com.baomidou.mybatisplus.extension.service.IService;
 

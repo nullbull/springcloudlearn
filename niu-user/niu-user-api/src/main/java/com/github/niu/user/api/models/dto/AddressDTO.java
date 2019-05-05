@@ -1,4 +1,4 @@
-package com.github.niu.user.api.dto;
+package com.github.niu.user.api.models.dto;
 
 import com.github.niu.common.constants.Magic;
 import lombok.Data;

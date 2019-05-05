@@ -1,8 +1,8 @@
 package com.github.niu.user.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.github.niu.user.api.vo.AddressVO;
-import com.github.niu.user.api.dto.AddressDTO;
+import com.github.niu.user.api.models.vo.AddressVO;
+import com.github.niu.user.api.models.dto.AddressDTO;
 import com.github.niu.user.server.models.Address;
 
 import javax.validation.constraints.NotNull;

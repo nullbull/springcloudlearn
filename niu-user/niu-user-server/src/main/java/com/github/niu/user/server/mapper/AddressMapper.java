@@ -1,6 +1,6 @@
 package com.github.niu.user.server.mapper;
 
-import com.github.niu.user.api.vo.AddressVO;
+import com.github.niu.user.api.models.vo.AddressVO;
 import com.github.niu.user.server.models.Address;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;

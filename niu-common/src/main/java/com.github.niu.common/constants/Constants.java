@@ -52,4 +52,9 @@ public interface Constants {
 
     Byte DRIVER_STATUS_FORBIDDEN = 3;
 
+    Byte PACKAGE_TYPE_SMALL = 1;
+
+    Byte PACKAGE_TYPE_MIDDLE = 2;
+
+    Byte PACKAGE_TYPE_LARGE = 3;
 }

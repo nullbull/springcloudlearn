@@ -1,13 +1,11 @@
 package com.github.niu.user.server.service.impl;
 
 import com.github.niu.common.constants.Constants;
-import com.github.niu.user.api.dto.AppUserDTO;
+import com.github.niu.user.api.models.dto.AppUserDTO;
 import com.github.niu.user.server.service.IAppUserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import static org.junit.Assert.*;
 
 /**
  * @author 牛贞昊（niuzhenhao@58.com）
