@@ -39,6 +39,6 @@ logging:
   level:
     org.springframework: debug
     # 熔断器超时时间，默认：1000/毫秒
-#hystrix:
-#  metrics:
-#    polling-interval-ms: 3000
+hystrix:
+  metrics:
+    polling-interval-ms: 3000

@@ -22,9 +22,9 @@ public class AppUser implements Serializable {
 
     private String nickname;
 
-    private Byte sex;
+    private Byte gender;
 
-    private String iconUrl;
+    private String avatarUrl;
 
     private String phone;
 

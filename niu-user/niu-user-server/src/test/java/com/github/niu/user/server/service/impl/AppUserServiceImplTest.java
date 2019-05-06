@@ -21,8 +21,7 @@ public class AppUserServiceImplTest extends BaseTest{
     public void createUser() throws Exception {
         AppUserDTO appUserDTO  = new AppUserDTO();
         appUserDTO.setContent("hhhha");
-        appUserDTO.setIconUrl("www.baidu.com");
-        appUserDTO.setLoginIp("127.0.0.1");
+        appUserDTO.setAvatarUrl("www.baidu.com");
         appUserDTO.setNickname("张炜婷");
         appUserDTO.setPoint(10);
         appUserDTO.setOpenid("12345568");

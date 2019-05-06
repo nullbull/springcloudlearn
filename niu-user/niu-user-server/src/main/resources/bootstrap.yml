@@ -38,3 +38,6 @@ logging:
 mybatis-plus:
   mapper-locations: classpath:com/github/niu/user/server/mapper/xml/*.xml
   type-aliases-package: com.niu.github.niu.user.server.models
+feign:
+  hystrix:
+    enabled: true

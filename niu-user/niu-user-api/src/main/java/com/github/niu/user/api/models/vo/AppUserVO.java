@@ -3,6 +3,7 @@ package com.github.niu.user.api.models.vo;
 import com.github.niu.common.constants.Magic;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Date;
  * @desc
  */
 @Data
-public class AppUserVO implements Magic {
+public class AppUserVO implements Magic, Serializable {
     private Long id;
 
     private String nickname;

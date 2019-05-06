@@ -33,7 +33,10 @@ public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> impl
         if (null == dto.getId()) {
             AppUser appUser = new AppUser();
             AppUser temp = baseMapper.selectOne(new QueryWrapper<AppUser>().lambda().eq(AppUser::getOpenid, dto.getOpenid()));
-            ParameterAssert.isUserValid(temp, "已注册");
+            if (null != temp) {
+                throw new UserException("已注册");
+            }
+//            ParameterAssert.isUserValid(temp, "已注册");
             appUser = dto.apply(appUser);
             appUser.setId(SnowFlowerUtils.createId());
             appUser.setCreateAt(new Date());

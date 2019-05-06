@@ -20,21 +20,21 @@ public class AppUserDTO implements Magic {
     private String nickname;
 
     @NotNull(message = "性别不能为空")
-    private Byte sex;
+    private Byte gender;
 
     @NotNull(message = "头像地址不能为空")
-    private String iconUrl;
+    private String avatarUrl;
+
     @NotNull(message = "手机号不能为空")
     private String phone;
 
     private String content;
 
     private Integer point;
-    @NotNull(message = "微信id不能为空")
+
     private String openid;
 
-    private Date lastLogin;
-
-    private String loginIp;
+    @NotNull(message = "code 不能为空")
+    private String code;
 
 }

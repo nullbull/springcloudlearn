@@ -1,7 +1,9 @@
 package com.github.niu.user.api.models.vo;
 
 import com.github.niu.common.constants.Magic;
+import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -9,7 +11,8 @@ import java.util.Date;
  * @date 2019/5/5 12:27
  * @desc
  */
-public class DriverVO implements Magic {
+@Data
+public class DriverVO implements Magic, Serializable {
 
     private Long userId;
 

@@ -22,7 +22,7 @@ import javax.sql.DataSource;
  */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients("com.github.niu")
+@EnableFeignClients("com.github.niu.express")
 @MapperScan(basePackages = "com.github.niu.user.server.mapper")
 public class UserApplication {
 
