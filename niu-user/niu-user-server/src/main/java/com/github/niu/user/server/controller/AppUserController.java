@@ -38,5 +38,7 @@ public class AppUserController {
         return appUserService.changeUserType(id, Constants.USER_TYPE_DRIVER);
     }
 
+
+
 }
 

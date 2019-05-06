@@ -46,7 +46,7 @@ public class CommonUtil {
         ConvertUtils.register(new BigDecimalConverter(null), BigDecimal.class);
         ConvertUtils.register(new DateConverter(null), Date.class);
     }
-    public static  <T> T apply(T t, Object o) throws Exception{
+    public static <T> T apply(T t, Object o) throws Exception{
         BeanUtils.copyProperties(Optional.of(t).orElseThrow(() -> new ExpressException("参数不能为空")), o);
         return t;
     }

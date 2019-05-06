@@ -1,5 +1,6 @@
 package com.github.niu.user.server.models;
 
+import com.github.niu.common.constants.Magic;
 import lombok.Data;
 
 import java.util.Date;
@@ -14,7 +15,7 @@ import java.io.Serializable;
  * @since 2019-05-03
  */
 @Data
-public class AppUser implements Serializable {
+public class AppUser implements Serializable, Magic {
 
     private static final long serialVersionUID = 1L;
 

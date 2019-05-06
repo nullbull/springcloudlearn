@@ -25,7 +25,6 @@ public class AppUserDTO implements Magic {
     @NotNull(message = "头像地址不能为空")
     private String avatarUrl;
 
-    @NotNull(message = "手机号不能为空")
     private String phone;
 
     private String content;

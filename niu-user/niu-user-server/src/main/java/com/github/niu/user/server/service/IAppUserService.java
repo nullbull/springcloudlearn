@@ -21,4 +21,6 @@ public interface IAppUserService extends IService<AppUser> {
     int changeUserType(Long id, Byte status) throws Exception;
 
     List<AppUserVO> getAll() throws Exception;
+
+    AppUserVO getByOpenId(String openId) throws Exception;
 }

@@ -14,6 +14,7 @@ import com.github.niu.user.server.service.IAppUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
 
@@ -64,5 +65,10 @@ public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> impl
     @Override
     public List<AppUserVO> getAll() throws Exception {
         return null;
+    }
+
+    @Override
+    public AppUserVO getByOpenId(@NotNull String openId) throws Exception {
+        return baseMapper.selectOne(new QueryWrapper<AppUser>().lambda().eq(AppUser::getOpenid, openId)).apply(new AppUserVO());
     }
 }
