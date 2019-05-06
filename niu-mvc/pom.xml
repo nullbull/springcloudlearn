@@ -39,6 +39,11 @@
             <artifactId>niu-express-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.github</groupId>
+            <artifactId>niu-user-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--消息总线-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
