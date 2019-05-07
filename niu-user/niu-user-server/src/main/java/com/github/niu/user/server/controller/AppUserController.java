@@ -3,6 +3,7 @@ package com.github.niu.user.server.controller;
 
 import com.github.niu.common.constants.Constants;
 import com.github.niu.user.api.models.dto.AppUserDTO;
+import com.github.niu.user.api.models.vo.AppUserVO;
 import com.github.niu.user.server.service.IAppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,7 +30,7 @@ public class AppUserController {
     IAppUserService appUserService;
 
     @RequestMapping("/add")
-    public int add(@Valid @RequestBody AppUserDTO dto) throws Exception {
+    public AppUserVO add(@Valid @RequestBody AppUserDTO dto) throws Exception {
         return appUserService.createUser(dto);
     }
 
@@ -38,7 +39,9 @@ public class AppUserController {
         return appUserService.changeUserType(id, Constants.USER_TYPE_DRIVER);
     }
 
-
-
+    @RequestMapping("/getByOpenId/{id}")
+    public AppUserVO getByOpenId(@PathVariable("id") String id) throws Exception {
+        return appUserService.getByOpenId(id);
+    }
 }
 

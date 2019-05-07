@@ -2,6 +2,7 @@ package com.github.niu.user.api.service;
 
 import com.github.niu.common.constants.Constants;
 import com.github.niu.user.api.models.dto.AppUserDTO;
+import com.github.niu.user.api.models.vo.AppUserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Controller;
@@ -21,8 +22,11 @@ import javax.validation.Valid;
 public interface IAppUserRemote {
 
     @RequestMapping("/add")
-    int add(@Valid @RequestBody AppUserDTO dto) throws Exception;
+    AppUserVO add(@Valid @RequestBody AppUserDTO dto) throws Exception;
 
     @RequestMapping("/toDriver/{id}")
     int changToDriver(@PathVariable("id") Long id) throws Exception;
+
+    @RequestMapping("/getByOpenId/{id}")
+    AppUserVO getByOpenId(@PathVariable("id") String id) throws Exception;
 }

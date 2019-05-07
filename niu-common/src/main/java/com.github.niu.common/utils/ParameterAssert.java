@@ -111,6 +111,12 @@ public class ParameterAssert {
         }
     }
 
+    public static void isSuccess(int ans) throws Exception {
+        if (ans != 1) {
+            throw new ExpressException(ErrorCodeEnum.OPERATOR_FAIL);
+        }
+    }
+
 //
 //
 //    public static void isStudyValid(final Object o) throws Exception {

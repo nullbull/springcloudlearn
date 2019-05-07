@@ -5,6 +5,7 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.converters.*;
 import org.apache.commons.lang.StringUtils;
+import org.apache.http.HttpRequest;
 
 import java.math.BigDecimal;
 import java.util.Date;

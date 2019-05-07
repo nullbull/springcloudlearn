@@ -16,7 +16,7 @@ import java.util.List;
  * @since 2019-05-03
  */
 public interface IAppUserService extends IService<AppUser> {
-    int createUser(AppUserDTO dto) throws Exception;
+    AppUserVO createUser(AppUserDTO dto) throws Exception;
 
     int changeUserType(Long id, Byte status) throws Exception;
 

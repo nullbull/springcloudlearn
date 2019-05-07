@@ -3,9 +3,13 @@ package com.github.niu.mvc.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.github.niu.common.constants.Constants;
+import com.github.niu.common.constants.ReturnData;
+import com.github.niu.common.enums.ErrorCodeEnum;
 import com.github.niu.common.utils.HttpClientUtil;
+import com.github.niu.common.utils.ParameterAssert;
 import com.github.niu.mvc.config.RedisUtil;
 import com.github.niu.user.api.models.dto.AppUserDTO;
+import com.github.niu.user.api.models.vo.AppUserVO;
 import com.github.niu.user.api.service.IAppUserRemote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -37,9 +41,15 @@ public class UserController {
     IAppUserRemote appUserRemote;
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public int login(@Valid AppUserDTO dto) throws Exception {
-        dto.setOpenid(getOpenId(dto.getCode()));
-        return appUserRemote.add(dto);
+    public ReturnData login(@Valid AppUserDTO dto) throws Exception {
+        String openId = getOpenId(dto.getCode());
+        ParameterAssert.isUserValid(openId, ErrorCodeEnum.UNKNOWN_ERROR);
+        AppUserVO userVO = appUserRemote.getByOpenId(openId);
+        if (null == userVO) {
+            dto.setOpenid(openId);
+            return ReturnData.SUCCESS(appUserRemote.add(dto));
+        }
+        return ReturnData.SUCCESS(userVO);
     }
 
 

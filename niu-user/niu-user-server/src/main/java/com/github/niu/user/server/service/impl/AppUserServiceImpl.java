@@ -30,24 +30,25 @@ import java.util.List;
 public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> implements IAppUserService {
 
     @Override
-    public int createUser(AppUserDTO dto) throws Exception {
+    public AppUserVO createUser(AppUserDTO dto) throws Exception {
         if (null == dto.getId()) {
             AppUser appUser = new AppUser();
             AppUser temp = baseMapper.selectOne(new QueryWrapper<AppUser>().lambda().eq(AppUser::getOpenid, dto.getOpenid()));
             if (null != temp) {
                 throw new UserException("已注册");
             }
-//            ParameterAssert.isUserValid(temp, "已注册");
             appUser = dto.apply(appUser);
             appUser.setId(SnowFlowerUtils.createId());
             appUser.setCreateAt(new Date());
             appUser.setType(Constants.USER_TYPE_NORMAL);
-            return baseMapper.insert(appUser);
+            ParameterAssert.isSuccess(baseMapper.insert(appUser));
+            return appUser.apply(new AppUserVO());
         } else {
             AppUser temp = baseMapper.selectById(dto.getId());
             ParameterAssert.isUserValid(temp, ErrorCodeEnum.RECORD_NOT_EXIST);
             temp = dto.apply(temp);
-            return baseMapper.updateById(temp);
+            ParameterAssert.isSuccess(baseMapper.updateById(temp));
+            return temp.apply(new AppUserVO());
         }
     }
 

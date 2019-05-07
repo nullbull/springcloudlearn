@@ -3,13 +3,14 @@ package com.github.niu.express.api.models.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * 分页
  */
 @Data
-public class Page<T> {
+public class Page<T> implements Serializable {
 
     private Integer pageSize;
 

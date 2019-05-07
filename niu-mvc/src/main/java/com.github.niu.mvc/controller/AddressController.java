@@ -1,6 +1,8 @@
 package com.github.niu.mvc.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.github.niu.common.constants.ReturnData;
+import com.github.niu.common.utils.ParameterAssert;
 import com.github.niu.user.api.models.dto.AddressDTO;
 import com.github.niu.user.api.service.IAddressRemote;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +22,10 @@ public class AddressController {
     @Autowired
     IAddressRemote addressRemote;
 
-    @RequestMapping(value = "/doAdd", method = RequestMethod.POST)
-    public String add(@Valid @RequestBody AddressDTO dto) throws Exception {
-        return JSON.toJSONString(addressRemote.add(dto));
+    @RequestMapping(value = "/saveAddress", method = RequestMethod.POST)
+    public ReturnData add(@Valid AddressDTO dto) throws Exception {
+        ParameterAssert.isSuccess(addressRemote.add(dto));
+        return ReturnData.SUCCESS("ok");
     }
 
     @RequestMapping(value = "/getByUser/{id}")

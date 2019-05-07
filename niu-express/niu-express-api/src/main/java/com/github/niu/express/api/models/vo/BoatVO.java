@@ -2,6 +2,7 @@ package com.github.niu.express.api.models.vo;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -11,7 +12,7 @@ import java.util.Date;
  * @desc
  */
 @Data
-public class BoatVO {
+public class BoatVO implements Serializable {
     private Long id;
 
     private Byte smallCount;
