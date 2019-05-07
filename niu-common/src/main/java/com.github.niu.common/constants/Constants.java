@@ -58,7 +58,7 @@ public interface Constants {
 
     Byte PACKAGE_TYPE_LARGE = 3;
 
-    String WX_URL = "https://api.weixin.qq.com/sns/jscode2session?appid=wx544656d0682c9925&secret=f6c609f2b16d1d193ad2279801b5a62e&js_code=%s&grant_type=authorization_code";
+    String WX_URL = "https://api.weixin.qq.com/sns/jscode2session?appid=wx855cbe6f320222ba&secret=e9aaf058ad0133aa879fb76f444c1b6e&js_code=%s&grant_type=authorization_code";
 
     String WX_CODE_KEY = "wx:code:";
 }

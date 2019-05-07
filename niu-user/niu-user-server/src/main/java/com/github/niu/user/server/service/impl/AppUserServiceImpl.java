@@ -12,6 +12,7 @@ import com.github.niu.user.server.models.AppUser;
 import com.github.niu.user.server.mapper.AppUserMapper;
 import com.github.niu.user.server.service.IAppUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
@@ -29,6 +30,9 @@ import java.util.List;
 @Service
 public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> implements IAppUserService {
 
+
+    @Autowired
+    AppUserMapper appUserMapper;
     @Override
     public AppUserVO createUser(AppUserDTO dto) throws Exception {
         if (null == dto.getId()) {
@@ -70,6 +74,10 @@ public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> impl
 
     @Override
     public AppUserVO getByOpenId(@NotNull String openId) throws Exception {
-        return baseMapper.selectOne(new QueryWrapper<AppUser>().lambda().eq(AppUser::getOpenid, openId)).apply(new AppUserVO());
+        AppUser appUser =  appUserMapper.selectOne(new QueryWrapper<AppUser>().eq("openid", openId));
+        if (null != appUser) {
+            return appUser.apply(new AppUserVO());
+        }
+        return null;
     }
 }

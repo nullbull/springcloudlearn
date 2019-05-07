@@ -4,7 +4,9 @@ import com.github.niu.user.api.models.dto.AppUserDTO;
 import com.github.niu.user.api.models.vo.AppUserVO;
 import com.github.niu.user.server.models.AppUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.sun.istack.internal.NotNull;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -22,5 +24,5 @@ public interface IAppUserService extends IService<AppUser> {
 
     List<AppUserVO> getAll() throws Exception;
 
-    AppUserVO getByOpenId(String openId) throws Exception;
+    AppUserVO getByOpenId(@Valid @NotNull String openId) throws Exception;
 }
