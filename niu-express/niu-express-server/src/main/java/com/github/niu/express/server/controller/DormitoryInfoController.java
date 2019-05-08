@@ -27,7 +27,6 @@ public class DormitoryInfoController {
 
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
     public String getById(@PathVariable("id") Byte id) throws Exception {
-        ParameterAssert.isAddressValid(id);
         String name = dormitoryInfoService.getByInfoID(id).getName();
         return name;
     }

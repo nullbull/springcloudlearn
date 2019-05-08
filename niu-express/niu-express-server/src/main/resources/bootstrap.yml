@@ -36,3 +36,8 @@ management:
 logging:
   level:
     org.springframework: debug
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/github/niu/express/server/mapper/xml/*.xml
+  type-aliases-package: com.niu.github.niu.express.server.models

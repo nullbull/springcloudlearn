@@ -1,16 +1,17 @@
 package com.github.niu.express.server.controller;
 
 
+import com.alibaba.fastjson.JSON;
 import com.github.niu.common.constants.Constants;
 import com.github.niu.express.api.models.dto.TicketDTO;
+import com.github.niu.express.api.models.vo.TicketVO;
 import com.github.niu.express.server.service.ITicketService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 /**
  * <p>
@@ -20,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author System
  * @since 2019-05-03
  */
-@Controller
+@RestController
 @RequestMapping("/ticket")
 public class TicketController {
 
@@ -39,6 +40,11 @@ public class TicketController {
     @RequestMapping("/cancel/{id}")
     public int cancel(@PathVariable("id") Long id) throws Exception {
         return ticketService.changeStatus(id, Constants.TICKET_STATUS_CANCEL);
+    }
+
+    @RequestMapping("/getByUserId/{id}")
+    public List<TicketVO> getByUserId(@PathVariable("id") Long id) throws Exception {
+        return ticketService.getByUserId(id);
     }
 }
 

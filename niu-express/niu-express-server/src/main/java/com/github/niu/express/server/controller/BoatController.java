@@ -35,7 +35,7 @@ public class BoatController {
     }
 
     @RequestMapping("/list")
-    public Page<BoatVO> list(@RequestParam BoatQueryDTO dto) throws Exception {
+    public List<BoatVO> list(@RequestBody BoatQueryDTO dto) throws Exception {
         return iBoatService.getByQueryDTO(dto);
     }
 

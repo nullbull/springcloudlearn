@@ -3,6 +3,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.github.niu.common.constants.Constants;
 import com.github.niu.common.utils.HttpClientUtil;
 import com.github.niu.express.api.models.dto.BoatDTO;
+import com.github.niu.express.api.models.dto.BoatQueryDTO;
 import com.github.niu.express.api.service.IBoatRemote;
 import com.github.niu.mvc.WorkApplication;
 import com.github.niu.mvc.config.RedisUtil;
@@ -67,5 +68,10 @@ public class test {
         String url = String.format(Constants.WX_URL, "1234567");
         JSONObject jb = JSON.parseObject(HttpClientUtil.doGet(url));
         System.out.println(jb.toString());
+    }
+
+    @Test
+    public void hhhhhh() throws Exception {
+        boatRemote.list(new BoatQueryDTO()).forEach(System.out::println);
     }
 }

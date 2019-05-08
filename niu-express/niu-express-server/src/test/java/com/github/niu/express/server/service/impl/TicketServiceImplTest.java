@@ -36,7 +36,8 @@ public class TicketServiceImplTest extends BaseTest{
 
     @Test
     public void getByUserId() throws Exception {
-        Assert.assertNotNull(iTicketService.getByUserId(123L));
+//        Assert.assertNotNull(iTicketService.getByUserId(1555664209091L));、
+        iTicketService.getByUserId(1555664209091L).stream().forEach(System.out::println);
     }
 
     @Test

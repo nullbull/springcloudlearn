@@ -32,7 +32,7 @@ public interface IBoatService extends IService<Boat> {
     * @return
     * @throws Exception
     */
-   Page<BoatVO> getByQueryDTO(BoatQueryDTO dto) throws Exception;
+   List<BoatVO> getByQueryDTO(BoatQueryDTO dto) throws Exception;
 
    /**
     *

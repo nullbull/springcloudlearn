@@ -21,7 +21,7 @@ public interface IBoatRemote {
     int add(@RequestBody BoatDTO dto)throws Exception;
 
     @RequestMapping("/list")
-    Page<BoatVO> list(@RequestBody BoatQueryDTO dto) throws Exception;
+    List<BoatVO> list(@RequestBody BoatQueryDTO dto) throws Exception;
 
     @RequestMapping("/get/{id}")
     List<BoatVO> getByUserId(@PathVariable("id") Long id) throws Exception;

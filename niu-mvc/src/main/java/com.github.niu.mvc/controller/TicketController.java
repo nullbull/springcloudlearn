@@ -1,5 +1,6 @@
 package com.github.niu.mvc.controller;
 
+import com.github.niu.common.constants.ReturnData;
 import com.github.niu.express.api.models.dto.TicketDTO;
 import com.github.niu.express.api.service.ITicketRemote;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,10 @@ public class TicketController {
         return ticketRemote.create(dto);
     }
 
+    @RequestMapping("/getTicket/{id}")
+    public ReturnData getTicket(@PathVariable("id") Long userId) throws Exception {
+        return ReturnData.SUCCESS(ticketRemote.getByUserId(userId));
+    }
 //    @RequestMapping("/finished/{id}")
 //    public int finished(@PathVariable("id") Long id) throws Exception {
 //

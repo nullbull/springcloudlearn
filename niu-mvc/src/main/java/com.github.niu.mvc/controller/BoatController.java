@@ -37,7 +37,7 @@ public class BoatController {
     }
 
     @RequestMapping("/query")
-    public Page<BoatVO> query(HttpServletRequest request) throws Exception {
+    public List<BoatVO> query(HttpServletRequest request) throws Exception {
         BoatQueryDTO dto = new BoatQueryDTO();
         dto.setCompanyId(getByteParameter(request, "companyId"));
         dto.setBeginAt(getDateParam(request, "beginAt"));

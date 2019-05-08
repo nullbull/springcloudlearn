@@ -1,10 +1,12 @@
 package com.github.niu.common.constants;
 
+import com.github.niu.common.enums.SiteEnum;
 import org.apache.commons.beanutils.BeanUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author 牛贞昊（niuzhenhao@58.com）
@@ -58,7 +60,14 @@ public interface Constants {
 
     Byte PACKAGE_TYPE_LARGE = 3;
 
-    String WX_URL = "https://api.weixin.qq.com/sns/jscode2session?appid=wx855cbe6f320222ba&secret=e9aaf058ad0133aa879fb76f444c1b6e&js_code=%s&grant_type=authorization_code";
+    String WX_URL = "https://api.weixin.qq.com/sns/jscode2session?appid=wxd8351139e225250e&secret=7e5a4a965f162e2f89ef5d83959af666&js_code=%s&grant_type=authorization_code";
 
     String WX_CODE_KEY = "wx:code:";
+
+    List<SiteVO> siteVOList = Arrays.stream(SiteEnum.values()).map(e -> {
+        SiteVO siteVO = new SiteVO();
+        siteVO.setTitle(e.getName());
+        siteVO.setValue(e.getCode());
+        return siteVO;
+    }).collect(Collectors.toList());
 }

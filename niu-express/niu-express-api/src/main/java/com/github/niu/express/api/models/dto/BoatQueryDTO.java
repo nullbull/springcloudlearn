@@ -2,6 +2,7 @@ package com.github.niu.express.api.models.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Date;
  * @desc
  */
 @Data
-public class BoatQueryDTO extends BaseQueryDTO {
+public class BoatQueryDTO extends BaseQueryDTO implements Serializable {
     private Byte companyId;
 
     private Date beginAt;

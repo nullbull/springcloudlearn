@@ -7,6 +7,7 @@ import com.github.niu.common.exceptions.TicketException;
 import com.github.niu.common.utils.ParameterAssert;
 import com.github.niu.common.utils.SnowFlowerUtils;
 import com.github.niu.express.api.models.dto.TicketDTO;
+import com.github.niu.express.api.models.vo.TicketVO;
 import com.github.niu.express.server.models.Ticket;
 import com.github.niu.express.server.mapper.TicketMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -47,8 +49,15 @@ public class TicketServiceImpl extends ServiceImpl<TicketMapper, Ticket> impleme
     }
 
     @Override
-    public List<Ticket> getByUserId(Long userId) throws Exception {
-        return baseMapper.selectList(new QueryWrapper<Ticket>().lambda().eq(Ticket::getUserId, userId));
+    public List<TicketVO> getByUserId(Long userId) throws Exception {
+        return baseMapper.selectList(new QueryWrapper<Ticket>().lambda().eq(Ticket::getUserId, userId)).stream().map(
+                t -> {
+                    try {
+                        return t.apply(new TicketVO());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    return null; }).collect(Collectors.toList());
     }
 
     @Override

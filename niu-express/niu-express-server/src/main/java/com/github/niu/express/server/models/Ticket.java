@@ -1,6 +1,7 @@
 package com.github.niu.express.server.models;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.github.niu.common.constants.Magic;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -14,7 +15,7 @@ import java.io.Serializable;
  * @author System
  * @since 2019-05-03
  */
-public class Ticket implements Serializable {
+public class Ticket implements Serializable, Magic {
 
     private static final long serialVersionUID = 1L;
 

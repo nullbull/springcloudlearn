@@ -52,13 +52,9 @@ public class BoatServiceImpl extends ServiceImpl<BoatMapper, Boat> implements IB
     }
 
     @Override
-    public Page<BoatVO> getByQueryDTO(BoatQueryDTO dto) throws Exception {
-        Page<BoatVO> page = new Page<>();
-        page.setPageNo(dto.getPageNo());
-        page.setPageSize(dto.getPageSize());
-        page.setTotal(baseMapper.selectTotalByQueryDTO(dto));
-        page.setRecords(baseMapper.selectByQueryDTO(dto));
-        return page;
+    public List<BoatVO> getByQueryDTO(BoatQueryDTO dto) throws Exception {
+        dto.check();
+        return baseMapper.selectByQueryDTO(dto);
     }
 
     @Override

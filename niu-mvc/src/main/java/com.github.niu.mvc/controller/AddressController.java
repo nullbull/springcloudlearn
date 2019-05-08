@@ -30,7 +30,7 @@ public class AddressController {
 
     @RequestMapping(value = "/getByUser/{id}")
     public String getByUserId(@PathVariable("id") Long id) throws Exception {
-        return JSON.toJSONString(addressRemote.getUserId(123L));
+        return JSON.toJSONString(addressRemote.getUserId(id));
     }
 
     @RequestMapping("/default/{id}")
