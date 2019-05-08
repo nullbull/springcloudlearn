@@ -1,8 +1,10 @@
 package com.github.niu.mvc.controller;
 
 import com.github.niu.user.api.models.dto.DriverDTO;
+import com.github.niu.user.api.models.vo.DriverVO;
 import com.github.niu.user.api.service.IDriverRemote;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,6 +25,11 @@ public class DriverController {
     @RequestMapping("/register")
     public int register(@Valid DriverDTO driverDTO) throws Exception {
         return driverRemote.add(driverDTO);
+    }
+
+    @RequestMapping("/get/{id}")
+    public DriverVO get(@PathVariable("id") Long userId) throws Exception {
+        return driverRemote.getById(userId);
     }
 
 

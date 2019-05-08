@@ -8,6 +8,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpRequest;
 
 import java.math.BigDecimal;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Optional;
 
@@ -50,6 +51,16 @@ public class CommonUtil {
     public static <T> T apply(T t, Object o) throws Exception{
         BeanUtils.copyProperties(Optional.of(t).orElseThrow(() -> new ExpressException("参数不能为空")), o);
         return t;
+    }
+
+    public static Date getTodayTime(String date) {
+        String[] real = date.split(":");
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        calendar.set(Calendar.HOUR_OF_DAY, Integer.parseInt(real[0]));
+        calendar.set(Calendar.MINUTE, Integer.parseInt(real[1]));
+        calendar.set(Calendar.SECOND, 0);
+        return calendar.getTime();
     }
 
 

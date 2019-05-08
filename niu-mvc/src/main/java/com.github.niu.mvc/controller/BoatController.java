@@ -10,9 +10,7 @@ import com.github.niu.express.api.service.IBoatRemote;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpRequest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -32,8 +30,9 @@ public class BoatController {
     IBoatRemote boatRemote;
 
     @RequestMapping("/create")
+    @ResponseBody
     public int create(@Valid BoatDTO boatDTO) throws Exception {
-        return boatRemote.add(boatDTO);
+        return boatRemote.add(boatDTO.init());
     }
 
     @RequestMapping("/query")

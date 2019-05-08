@@ -3,6 +3,7 @@ package com.github.niu.user.server.controller;
 
 import com.github.niu.common.constants.Constants;
 import com.github.niu.user.api.models.dto.DriverDTO;
+import com.github.niu.user.api.models.vo.DriverVO;
 import com.github.niu.user.server.service.IDriverService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -41,6 +42,11 @@ public class DriverController {
     @RequestMapping("/cancel/{id}")
     public int cancel(@PathVariable("id") Long id) throws Exception {
         return driverService.certificationDriver(id, Constants.DRIVER_STATUS_FORBIDDEN);
+    }
+
+    @RequestMapping("/getById/{id}")
+    public DriverVO getById(@PathVariable("id") Long id) throws Exception {
+        return driverService.getByUserId(id);
     }
 }
 

@@ -69,6 +69,10 @@ public class DriverServiceImpl extends ServiceImpl<DriverMapper, Driver> impleme
 
     @Override
     public DriverVO getByUserId(Long userId) throws Exception {
-        return getById(userId).apply(new DriverVO());
+        Driver driver;
+        if ((driver = getById(userId)) != null) {
+            return driver.apply(new DriverVO());
+        }
+        return null;
     }
 }

@@ -1,6 +1,7 @@
 package com.github.niu.express.api.models.dto;
 
 import com.github.niu.common.constants.Magic;
+import com.github.niu.common.utils.CommonUtil;
 import lombok.Data;
 
 import javax.validation.constraints.NotNull;
@@ -43,9 +44,25 @@ public class BoatDTO implements Magic {
 
     private String content;
 
-    @NotNull(message = "开船时间")
     private Date beginAt;
 
-    @NotNull(message = "到站时间")
     private Date endAt;
+
+    private String destinationName;
+
+    private String companyName;
+
+    private Byte companyId;
+
+    private String beginTime;
+
+    private String endTime;
+
+    public BoatDTO init() {
+        if (!CommonUtil.validString(beginTime) && !CommonUtil.validString(endTime)) {
+            this.beginAt = CommonUtil.getTodayTime(this.beginTime);
+            this.endAt = CommonUtil.getTodayTime(this.endTime);
+        }
+        return this;
+    }
 }

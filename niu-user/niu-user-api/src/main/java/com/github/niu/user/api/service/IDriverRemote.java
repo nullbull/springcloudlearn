@@ -1,6 +1,7 @@
 package com.github.niu.user.api.service;
 
 import com.github.niu.user.api.models.dto.DriverDTO;
+import com.github.niu.user.api.models.vo.DriverVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,4 +25,7 @@ public interface IDriverRemote {
 
     @RequestMapping("/cancel/{id}")
     int cancel(@PathVariable("id") Long id) throws Exception;
+
+    @RequestMapping("/getById/{id}")
+    DriverVO getById(@PathVariable("id") Long id) throws Exception;
 }
