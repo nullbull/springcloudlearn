@@ -50,14 +50,15 @@ public class TicketServiceImpl extends ServiceImpl<TicketMapper, Ticket> impleme
 
     @Override
     public List<TicketVO> getByUserId(Long userId) throws Exception {
-        return baseMapper.selectList(new QueryWrapper<Ticket>().lambda().eq(Ticket::getUserId, userId)).stream().map(
-                t -> {
-                    try {
-                        return t.apply(new TicketVO());
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    return null; }).collect(Collectors.toList());
+        return baseMapper.selectByUserId(userId);
+//        return baseMapper.selectList(new QueryWrapper<Ticket>().lambda().eq(Ticket::getUserId, userId)).stream().map(
+//                t -> {
+//                    try {
+//                        return t.apply(new TicketVO());
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//                    return null; }).collect(Collectors.toList());
     }
 
     @Override

@@ -25,4 +25,7 @@ public interface IBoatRemote {
 
     @RequestMapping("/get/{id}")
     List<BoatVO> getByUserId(@PathVariable("id") Long id) throws Exception;
+
+    @RequestMapping("/createOrder")
+    int createOrder(@RequestParam("boatId")Long boatId, @RequestParam("type") Byte type) throws Exception;
 }

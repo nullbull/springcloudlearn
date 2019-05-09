@@ -36,7 +36,20 @@ public class TicketVO implements Serializable{
 
     private Byte status;
 
-    private Date createAt;
+    private String driverNickname;
 
-    private Date updateAt;
+    private Date beginAt;
+
+    private Date endAt;
+
+    private Byte boatStatus;
+
+    private String destinationName;
+
+    private String companyName;
+
+    private Byte companyId;
+
+    private String content;
+
 }

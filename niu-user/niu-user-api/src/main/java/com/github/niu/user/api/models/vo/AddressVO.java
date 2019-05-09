@@ -25,4 +25,6 @@ public class AddressVO implements Serializable {
     private String locationName;
 
     private Byte status;
+
+    private String detail;
 }

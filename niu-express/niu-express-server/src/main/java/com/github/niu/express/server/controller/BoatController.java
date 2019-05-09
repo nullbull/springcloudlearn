@@ -43,5 +43,10 @@ public class BoatController {
     public List<BoatVO> getByUserId(@PathVariable("id") Long id) throws Exception {
         return iBoatService.getByUserId(id);
     }
+
+    @RequestMapping("/createOrder")
+    public int createOrder(@RequestParam("boatId")Long boatId, @RequestParam("type") Byte type) throws Exception {
+        return iBoatService.makeDeal(boatId, type);
+    }
 }
 

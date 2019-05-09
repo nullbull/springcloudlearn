@@ -41,4 +41,6 @@ public class TicketDTO implements Magic {
 
     @NotNull(message = "取货码")
     private String code;
+
+    private String content;
 }

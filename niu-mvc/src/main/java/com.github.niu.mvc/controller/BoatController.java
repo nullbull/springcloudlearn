@@ -30,7 +30,6 @@ public class BoatController {
     IBoatRemote boatRemote;
 
     @RequestMapping("/create")
-    @ResponseBody
     public int create(@Valid BoatDTO boatDTO) throws Exception {
         return boatRemote.add(boatDTO.init());
     }
@@ -55,7 +54,10 @@ public class BoatController {
         return boatRemote.getByUserId(id);
     }
 
-
+    @RequestMapping("/makeOrder")
+    public int createOrder(@RequestParam("boatId")Long boatId, @RequestParam("type") Byte type) throws Exception {
+        return boatRemote.createOrder(boatId, type);
+    }
     private Byte getByteParameter(HttpServletRequest request, String name) throws Exception {
         String value = request.getParameter(name);
         if (!CommonUtil.validString(value)) {
@@ -71,4 +73,7 @@ public class BoatController {
         }
         return DateUtil.parseDateTime(date);
     }
+
+
+
 }

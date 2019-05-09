@@ -20,6 +20,7 @@ import java.util.List;
 public interface IBoatService extends IService<Boat> {
    /**
     * 创建船
+    *
     * @param dto
     * @return
     * @throws Exception
@@ -28,6 +29,7 @@ public interface IBoatService extends IService<Boat> {
 
    /**
     * 获取船次
+    *
     * @param dto
     * @return
     * @throws Exception
@@ -35,10 +37,12 @@ public interface IBoatService extends IService<Boat> {
    List<BoatVO> getByQueryDTO(BoatQueryDTO dto) throws Exception;
 
    /**
-    *
     * @param userId
     * @return
     * @throws Exception
     */
    List<BoatVO> getByUserId(Long userId) throws Exception;
+
+
+   int makeDeal(Long id, Byte type) throws Exception;
 }

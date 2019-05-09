@@ -70,6 +70,42 @@ public class BoatServiceImpl extends ServiceImpl<BoatMapper, Boat> implements IB
                 return null;
             }).collect(Collectors.toList());
     }
+    @Override
+    public int makeDeal(Long id, Byte type) throws Exception {
+        Boat boat = getById(id);
+        byte remain;
+        switch (type) {
+            case 1: {
+                remain = boat.getSmallCount();
+                if (remain > 0) {
+                    boat.setSmallCount((byte) (remain - 1));
+                    return baseMapper.updateById(boat);
+                } else {
+                    return 2;
+                }
+            }
+            case 2: {
+                remain = boat.getNormalCount();
+                if (remain > 0) {
+                    boat.setNormalCount((byte) (remain - 1));
+                    return baseMapper.updateById(boat);
+                } else {
+                    return 2;
+                }
+            }
+            case 3: {
+                remain = boat.getLargeCount();
+                if (remain > 0) {
+                    boat.setLargeCount((byte) (remain - 1));
+                    return baseMapper.updateById(boat);
+                } else {
+                    return 2;
+                }
+            }
+            default:
+        }
+        return 2;
+    }
 
 
 }

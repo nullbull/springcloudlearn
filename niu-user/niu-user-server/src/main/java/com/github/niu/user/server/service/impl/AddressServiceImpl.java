@@ -37,7 +37,7 @@ public class AddressServiceImpl extends ServiceImpl<AddressMapper, Address> impl
     @Transactional(rollbackFor = Exception.class)
     public int createAddress(@NotNull AddressDTO dto) throws Exception {
 
-        if (null == dto.getId()) {
+        if (null == dto.getId() || 0 == dto.getId()) {
             String locationName = dormitoryInfoRemote.getNameById(dto.getLocationId());
             Address address = new Address();
             address.setLocationName(locationName);

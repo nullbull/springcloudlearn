@@ -1,7 +1,11 @@
 package com.github.niu.express.server.mapper;
 
+import com.github.niu.express.api.models.vo.TicketVO;
 import com.github.niu.express.server.models.Ticket;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface TicketMapper extends BaseMapper<Ticket> {
 
+    List<TicketVO> selectByUserId(@Param("userId") Long userId);
 }

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.github.niu.express.server.mapper.TicketMapper">
-
+    <select id="selectByUserId" resultType="com.github.niu.express.api.models.vo.TicketVO">
+        select a.id, a.boat_id, a.user_id, a.price, a.package_type, a.address_id, a.leave_phone, a.leave_name,
+        a.code, a.status as status, b.status as boatStatus, b.begin_at, b.end_at, b.driver_nickname, b.company_id, b.company_name, b.destination_name
+        from ticket a left join boat b on a.boat_id = b.id where a.user_id = #{userId}
+    </select>
 </mapper>

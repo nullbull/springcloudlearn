@@ -29,4 +29,6 @@ public class AddressDTO implements Magic {
 
     @NotNull(message = "状态不能为空")
     private Byte status;
+
+    private String detail;
 }
