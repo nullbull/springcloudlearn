@@ -27,6 +27,9 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
   jackson:
     time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 100MB
 eureka:
   client:
     register-with-eureka: false
