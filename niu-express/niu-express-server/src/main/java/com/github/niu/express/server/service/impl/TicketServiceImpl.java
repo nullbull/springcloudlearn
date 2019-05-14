@@ -7,6 +7,8 @@ import com.github.niu.common.exceptions.TicketException;
 import com.github.niu.common.utils.ParameterAssert;
 import com.github.niu.common.utils.SnowFlowerUtils;
 import com.github.niu.express.api.models.dto.TicketDTO;
+import com.github.niu.express.api.models.vo.PassengerVO;
+import com.github.niu.express.api.models.vo.TicketDetailVO;
 import com.github.niu.express.api.models.vo.TicketVO;
 import com.github.niu.express.server.models.Ticket;
 import com.github.niu.express.server.mapper.TicketMapper;
@@ -80,5 +82,14 @@ public class TicketServiceImpl extends ServiceImpl<TicketMapper, Ticket> impleme
         return baseMapper.updateById(ticket);
     }
 
+    @Override
+    public List<PassengerVO> getPassenger(@NotNull Long id) {
+        return baseMapper.selectByDriverId(id);
+    }
+
+    @Override
+    public List<TicketDetailVO> getTicketByBoatId(@NotNull Long id) {
+        return baseMapper.selectByBoatId(id);
+    }
 
 }

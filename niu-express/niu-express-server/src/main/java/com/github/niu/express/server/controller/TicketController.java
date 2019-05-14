@@ -4,6 +4,8 @@ package com.github.niu.express.server.controller;
 import com.alibaba.fastjson.JSON;
 import com.github.niu.common.constants.Constants;
 import com.github.niu.express.api.models.dto.TicketDTO;
+import com.github.niu.express.api.models.vo.PassengerVO;
+import com.github.niu.express.api.models.vo.TicketDetailVO;
 import com.github.niu.express.api.models.vo.TicketVO;
 import com.github.niu.express.server.service.ITicketService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +47,17 @@ public class TicketController {
     @RequestMapping("/getByUserId/{id}")
     public List<TicketVO> getByUserId(@PathVariable("id") Long id) throws Exception {
         return ticketService.getByUserId(id);
+    }
+
+
+    @RequestMapping("/getPassenger/{id}")
+    public List<PassengerVO> getByDriverId(@PathVariable("id") Long id) throws Exception {
+        return ticketService.getPassenger(id);
+    }
+
+    @RequestMapping("/getTicketDetail/{id}")
+    public List<TicketDetailVO> getByBoatId(@PathVariable("id") Long id) throws Exception {
+        return ticketService.getTicketByBoatId(id);
     }
 }
 

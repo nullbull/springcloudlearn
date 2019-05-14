@@ -2,6 +2,8 @@ package com.github.niu.mvc.controller;
 
 import com.github.niu.common.constants.ReturnData;
 import com.github.niu.express.api.models.dto.TicketDTO;
+import com.github.niu.express.api.models.vo.PassengerVO;
+import com.github.niu.express.api.models.vo.TicketDetailVO;
 import com.github.niu.express.api.models.vo.TicketVO;
 import com.github.niu.express.api.service.ITicketRemote;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,4 +39,14 @@ public class TicketController {
 //    public int finished(@PathVariable("id") Long id) throws Exception {
 //
 //    }
+    @RequestMapping("/passenger/{id}")
+    public List<PassengerVO> getByDriverId(@PathVariable("id") Long id) throws Exception {
+        return ticketRemote.getByDriverId(id);
+    }
+
+
+    @RequestMapping("/boatDetail/{id}")
+    public List<TicketDetailVO> getByBoatId(@PathVariable("id") Long id) throws Exception {
+        return ticketRemote.getByBoatId(id);
+    }
 }

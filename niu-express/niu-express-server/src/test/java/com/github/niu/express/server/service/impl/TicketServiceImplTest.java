@@ -44,4 +44,14 @@ public class TicketServiceImplTest extends BaseTest{
     public void changeStatus() throws Exception {
         Assert.assertEquals(1, iTicketService.changeStatus(1555521139372L, Constants.TICKET_STATUS_FINISHED));
     }
+
+    @Test
+    public void  getPassenger() throws Exception {
+        iTicketService.getPassenger(1555664209091L).forEach(System.out::println);
+    }
+
+    @Test
+    public void getByBoatId() throws Exception {
+        iTicketService.getTicketByBoatId(1555432152599L).forEach(System.out::println);
+    }
 }

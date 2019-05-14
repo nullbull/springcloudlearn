@@ -1,6 +1,8 @@
 package com.github.niu.express.api.service;
 
 import com.github.niu.express.api.models.dto.TicketDTO;
+import com.github.niu.express.api.models.vo.PassengerVO;
+import com.github.niu.express.api.models.vo.TicketDetailVO;
 import com.github.niu.express.api.models.vo.TicketVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,4 +31,11 @@ public interface ITicketRemote {
 
     @RequestMapping("/getByUserId/{id}")
     List<TicketVO> getByUserId(@PathVariable("id") Long id) throws Exception;
+
+    @RequestMapping("/getPassenger/{id}")
+    List<PassengerVO> getByDriverId(@PathVariable("id") Long id) throws Exception;
+
+
+    @RequestMapping("/getTicketDetail/{id}")
+    List<TicketDetailVO> getByBoatId(@PathVariable("id") Long id) throws Exception;
 }

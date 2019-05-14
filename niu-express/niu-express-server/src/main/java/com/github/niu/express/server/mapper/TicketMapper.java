@@ -1,5 +1,7 @@
 package com.github.niu.express.server.mapper;
 
+import com.github.niu.express.api.models.vo.PassengerVO;
+import com.github.niu.express.api.models.vo.TicketDetailVO;
 import com.github.niu.express.api.models.vo.TicketVO;
 import com.github.niu.express.server.models.Ticket;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -18,4 +20,8 @@ import java.util.List;
 public interface TicketMapper extends BaseMapper<Ticket> {
 
     List<TicketVO> selectByUserId(@Param("userId") Long userId);
+
+    List<PassengerVO> selectByDriverId(@Param("userId") Long userId);
+
+    List<TicketDetailVO> selectByBoatId(@Param("boatId") Long boatId);
 }

@@ -6,4 +6,17 @@
         a.code, a.status as status, b.status as boatStatus, b.begin_at, b.end_at, b.driver_nickname, b.company_id, b.company_name, b.destination_name
         from ticket a left join boat b on a.boat_id = b.id where a.user_id = #{userId}
     </select>
+
+    <select id="selectByDriverId" resultType="com.github.niu.express.api.models.vo.PassengerVO">
+        select a.id, a.leave_phone, a.leave_name, b.company_name, b.destination_name, b.begin_at,
+        b.end_at from ticket a left join boat b on a.boat_id = b.id where b.driver_id = #{userId}
+    </select>
+
+    <select id="selectByBoatId" resultType="com.github.niu.express.api.models.vo.TicketDetailVO">
+        select a.id, a.boat_id, a.user_id, a.price, a.package_type, a.address_id, a.leave_phone,
+        a.leave_name, a.code, a.status,  b.leave_name as addressName, b.leave_phone as addressPhone,
+        b.detail, b.location_name as addressLocationName, c.company_name from ticket a left join address b on a.address_id = b.id
+        left join boat c on c.id = a.boat_id
+        where a.boat_id = #{boatId}
+    </select>
 </mapper>
