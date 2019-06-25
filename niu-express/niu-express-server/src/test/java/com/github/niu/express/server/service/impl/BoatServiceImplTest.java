@@ -18,6 +18,8 @@ public class BoatServiceImplTest extends BaseTest{
     IBoatService boatService;
     @Test
     public void getByQueryDTO() throws Exception {
-        boatService.getByQueryDTO(new BoatQueryDTO()).forEach(System.out::println);
+        BoatQueryDTO dto = new BoatQueryDTO();
+        dto.setDestinationName("456");
+        boatService.getByQueryDTO(dto).forEach(System.out::println);
     }
 }

@@ -35,11 +35,7 @@ public class BoatController {
     }
 
     @RequestMapping("/query")
-    public List<BoatVO> query(HttpServletRequest request) throws Exception {
-        BoatQueryDTO dto = new BoatQueryDTO();
-        dto.setCompanyId(getByteParameter(request, "companyId"));
-        dto.setBeginAt(getDateParam(request, "beginAt"));
-        dto.setEndAt(getDateParam(request, "endAt"));
+    public List<BoatVO> query(BoatQueryDTO dto) throws Exception {
         return boatRemote.list(dto);
     }
 

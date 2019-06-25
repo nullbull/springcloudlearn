@@ -17,4 +17,6 @@ public class BoatQueryDTO extends BaseQueryDTO implements Serializable {
     private Date beginAt;
 
     private Date endAt;
+
+    private String destinationName;
 }

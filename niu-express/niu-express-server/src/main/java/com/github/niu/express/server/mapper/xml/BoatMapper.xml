@@ -6,12 +6,17 @@
         <if test="companyId != null">
             and company_id = #{companyId}
         </if>
+        <if test="destinationName != null">
+            <bind name="pattern" value="'%' + destinationName + '%'" />
+            and destination_name like  #{pattern}
+        </if>
         <if test="beginAt != null">
             and begin_at &gt;= beginAt
         </if>
         <if test="endAt != null">
             and end_at &lt;= endAt
         </if>
+
         limit #{offset}, #{pageSize}
     </select>
 
@@ -20,6 +25,10 @@
         select count(*) from boat where 1 = 1
         <if test="companyId != null">
             and company_id = #{companyId}
+        </if>
+        <if test="destinationName != null">
+            <bind name="pattern" value="'%' + #{destinationName}+ '%'" />
+            and destination_name like  #{pattern}
         </if>
         <if test="beginAt != null">
             and begin_at &gt;= beginAt

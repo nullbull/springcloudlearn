@@ -35,10 +35,10 @@ public class TicketController {
     public List<TicketVO> getTicket(@PathVariable("id") Long userId) throws Exception {
         return ticketRemote.getByUserId(userId);
     }
-//    @RequestMapping("/finished/{id}")
-//    public int finished(@PathVariable("id") Long id) throws Exception {
-//
-//    }
+    @RequestMapping("/end/{id}")
+    public int finished(@PathVariable("id") Long id) throws Exception {
+        return ticketRemote.finished(id);
+    }
     @RequestMapping("/passenger/{id}")
     public List<PassengerVO> getByDriverId(@PathVariable("id") Long id) throws Exception {
         return ticketRemote.getByDriverId(id);
