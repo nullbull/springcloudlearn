@@ -14,10 +14,10 @@ spring:
       trace:
         enabled: true
   rabbitmq:
-    username: justinniu
-    password: n1996z11h2
+    username:
+    password:
     virtual-host: /zwt
-    host: 59.110.137.45
+    host:
     port: 5672
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
